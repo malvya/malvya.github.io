@@ -20,7 +20,6 @@ description: Personal website of Malvya Chintakindi
 
 # List of links in the navigation bar
 navbar-links:
-  About: "about"
   Research: 
     - Projects: "project"
     - Publications: "publication"
