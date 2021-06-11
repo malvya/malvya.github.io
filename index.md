@@ -12,6 +12,6 @@ Prior to embarking on my doctoral studies, I have worked as an international dev
 Please find my latest CV here. Please reach out to connect and converse at malvyac@uoregon.edu or cmalvya@gmail.com 
 
 ## Skills: 
-Participatory Research 
-Social Network Analysis 
-Data Analysis
+- Participatory Research 
+- Social Network Analysis 
+- Data Analysis
