@@ -7,7 +7,7 @@ link-external-newwindow: true
 
 #### 2024
 
-**Power to the Researchers: Calculating Power After Estimation** *(Review of Development Economics )* </br> *with* Alex Tian, Robert Reed, Tom Coupe, Ben Wood
+**Power to the Researchers:s )* </br> *with* Alex Tian, Robert Reed, Tom Coupe, Ben Wood
 
 <a href="https://doi.org/10.1002/jae.3045"> Working Paper </a>\ <a href="https://doi.org/10.1111/rode.13130"> Published Article </a>
 
