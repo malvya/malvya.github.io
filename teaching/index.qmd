@@ -1,0 +1,37 @@
+---
+title: ""
+toc: true 
+link-external-newwindow: true
+---
+
+## Oregon State University (Instructor - Online)
+Sustainable Living - Practice and Policy (Winter 2023, Fall 2024, Spring 2025 ) </br>
+Politics of Developing Nations (Summer 2023, Winter 2024, Spring 2024, Winter 2025) </br>
+Environmental Politics and Policy (Fall 2023)
+
+## Oregon State University (Teaching Assistant)
+Politics of Developing Nations (Fall 2022) </br>
+Introduction to Econometrics (Spring 2023) </br>
+International Economics (Spring 2023)
+
+## University of Illinois at Chicago (Teaching Assistant)
+Introduction to Econometrics (Undergraduate) </br>
+Principles of Microeconomics (Undergraduate) </br>
+Principles of Macroeconomics (Undergraduate) 
+
+## Portland State University (Teaching Assistant)
+Advanced Econometrics (Graduate) </br>
+Advanced Applied Econometrics (Graduate) </br>
+Health Economics (Graduate/undergraduate) </br>
+Women in the Economy (Graduate/undergraduate) </br>
+Multinational Enterprises (Graduate/undergraduate)</br>
+Labor Economics and Industrial Relations (Graduate/Undergraduate) </br>
+Intermediate Microeconomics (Undergraduate) </br>
+Principles of Microeconomics (Undergraduate) </br>
+Intermediate Macroeconomics (Undergraduate) </br>
+Principles of Macroeconomics (Undergraduate) 
+
+## International Initiative for Impact Evaluation (Trainer)
+Push Button Replication (Computational Reproducibility) </br>
+Research Transparency and Open Science Practices </br>
+Impact Evaluation Methodologies using Stata

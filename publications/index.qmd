@@ -1,0 +1,99 @@
+---
+title: ""
+toc: true 
+link-external-newwindow: true
+---
+## Articles
+
+#### 2024
+
+**Power to the Researchers: Calculating Power After Estimation** *(Review of Development Economics )* </br> *with* Alex Tian, Robert Reed, Tom Coupe, Ben Wood
+
+<a href="https://doi.org/10.1002/jae.3045"> Working Paper </a>\ <a href="https://doi.org/10.1111/rode.13130"> Published Article </a>
+
+<details>
+
+<summary>Abstract</summary>
+
+Calculating statistical power before estimation is considered good practice. However, there is no generally accepted method for calculating power after estimation. There are several reasons why one would want to do this. First, there is general interest in knowing whether ex ante power calculations are dependable guides of actual power. Further, knowing the statistical power of an estimated equation can aid one in interpreting the associated estimates. This study proposes a simple method for calculating power after estimation. To assess its performance, we conduct Monte Carlo experiments customized to produce simulated datasets that resemble actual data from studies funded by the International Initiative for Impact Evaluation (3ie). In addition to the final reports, 3ie provided ex ante power calculations from the funding applications, along with data and code to reproduce the estimates in the final reports. After determining that our method performs adequately, we apply it to the 3ie-funded studies. We find an average ex post power of 75.4%, not far from the 80% commonly claimed in the 3ie funding applications. However, we observe significantly more estimates of low power than would be expected given the ex ante claims. We conclude by providing three examples to illustrate how ex post power can aid the interpretation of estimates that are (i) insignificant and low powered, (ii) insignificant and high powered, and (iii) significant and low powered.
+
+</details>
+
+**Research Transparency and Reproducibility at the  International Initiative for Impact Evaluation** *(Journal of Development Effectiveness)* </br> *with* <a href="https://education.uoregon.edu/directory/faculty/all/spgrant">Sean Grant</a>
+
+<a href="https://doi.org/10.1080/19439342.2024.2388102"> Published Article </a>
+
+<details>
+<summary>Abstract</summary>
+Research transparency and reproducibility can improve the credibility of scientific evidence on development effectiveness and the utility of this evidence for decision-making. As a funder and producer of research on development effectiveness, the International Initiative for Impact Evaluation (3ie) has several policies and programs that aim to improve research transparency and reproducibility. This manuscript provides a descriptive overview of the history-to-date of research transparency and reproducibility policies and programs at 3ie. In 2012, 3ie launched its Replication Program to incentivize replication of impact evaluations in international development. In 2014, 3ie created the Registry for International Development Impact Evaluations to provide infrastructure for the prospective registration of impact evaluations of development interventions. In 2018, 3ie published its first Research Transparency Policy articulating requirements on the use of open science practices in research activities. In 2022, 3ie created the Transparent, Reproducible, and Ethical Evidence (TREE) Review Framework, which integrates best practices for research transparency and reproducibility into evaluation workflows. This manuscript provides stakeholders in development effectiveness specifically—as well as research grant managers and other organizations in the scientific ecosystem more generally—a descriptive example of institutional efforts to continuously improve research transparency and reproducibility policies and programs.
+</details>
+
+
+#### 2021
+
+**Using big data for evaluating development outcomes: a systematic map** *(Campbell Systematic Reviews)* </br> *with* F.Rathinam, Z.Siddiqui, M.Malik, P.Duggal, S.Watson, X.Vollenweider
+
+<a href="https://doi.org/10.1002/cl2.1149"> Published Article </a>
+
+<details>
+
+<summary>Abstract</summary>
+
+**Background:** Policy makers need access to reliable data to monitor and evaluate the progress of development outcomes and targets such as sustainable development outcomes (SDGs). However, significant data and evidence gaps remain. Lack of resources, limited capacity within governments and logistical difficulties in collecting data are some of the reasons for the data gaps. Big data—that is digitally generated, passively produced and automatically collected—offers a great potential for answering some of the data needs. Satellite and sensors, mobile phone call detail records, online transactions and search data, and social media are some of the examples of big data. Integrating big data with the traditional household surveys and administrative data can complement data availability, quality, granularity, accuracy and frequency, and help measure development outcomes temporally and spatially in a number of new ways.The study maps different sources of big data onto development outcomes (based on SDGs) to identify current evidence base, use and the gaps. The map provides a visual overview of existing and ongoing studies. This study also discusses the risks, biases and ethical challenges in using big data for measuring and evaluating development outcomes. The study is a valuable resource for evaluators, researchers, funders, policymakers and practitioners in their effort to contributing to evidence informed policy making and in achieving the SDGs.
+
+**Objectives:** Identify and appraise rigorous impact evaluations (IEs), systematic reviews and the studies that have innovatively used big data to measure any development outcomes with special reference to difficult contexts
+
+**Search Methods:** A number of general and specialised data bases and reporsitories of organisations were searched using keywords related to big data by an information specialist.
+
+**Selection Criteria:** The studies were selected on basis of whether they used big data sources to measure or evaluate development outcomes.
+
+**Data Collection and Analysis:** Data collection was conducted using a data extraction tool and all extracted data was entered into excel and then analysed using Stata. The data analysis involved looking at trends and descriptive statistics only.
+
+**Main Results:** The search yielded over 17,000 records, which we then screened down to 437 studies which became the foundation of our systematic map. We found that overall, there is a sizable and rapidly growing number of measurement studies using big data but a much smaller number of IEs. We also see that the bulk of the big data sources are machine-generated (mostly satellites) represented in the light blue. We find that satellite data was used in over 70% of the measurement studies and in over 80% of the IEs.
+
+**Authors' Conclusions:** This map gives us a sense that there is a lot of work being done to develop appropriate measures using big data which could subsequently be used in IEs. Information on costs, ethics, transparency is lacking in the studies and more work is needed in this area to understand the efficacies related to the use of big data. There are a number of outcomes which are not being studied using big data, either due to the lack to applicability such as education or due to lack of awareness about the new methods and data sources. The map points to a number of gaps as well as opportunities where future researchers can conduct research.
+
+</details>
+
+## Book Chapters
+
+#### 2019
+
+**Short-Term Versus Long-Term Effects of Forced Displacement** (in Land Acquisition in Asia) </br> *with* Vengadeshvaran Sarma
+
+<a href="https://link.springer.com/chapter/10.1007/978-981-13-6455-6_3"> Link Here </a>
+
+<details>
+
+<summary>Abstract</summary>
+
+This study focuses on the conceptual frameworks and empirical evidence that underscore forced displacement. In particular, the study explores development-induced displacement and summarises evidence of its short-term and long-terms effects from around the developing world. Evidence in the literature points out to adverse short-term effects among displacees that normalise over the long run. In the short term, adverse psychological, income and cultural factors affect individual and family security and tend to make displacees worse off compared to non-displaced households. In the long term, however, adaptability among displacees and state mechanisms may help displacees normalise and settle down especially if adequate compensation policies are sanctioned.
+
+</details>
+
+## Other writing (Blogs and Op-eds) 
+
+#### 2022
+
+**Three ways you can start using remote sensing for measuring impact** </br> *with* Aayush Malik, Douglas Glandon, Jane Hammaker, Katherine Quant
+
+<a href = "https://www.3ieimpact.org/blogs/three-ways-you-can-start-using-remote-sensing-measuring-impact"> Link Here </a>
+
+**Assessing the impact of policy and institutional reforms in international development** </br> *with* Caroline Huang, Zeba Siddiqui, Douglas Glandon, Aayush Malik
+
+<a href = "https://www.3ieimpact.org/blogs/assessing-impact-policy-and-institutional-reforms-international-development"> Link Here </a>
+
+#### 2021
+**Beyond Counterfactuals: Making transparency, reproducibility, and ethics (TRE) central to rigorous evidence generation** </br> *with* Jennifer Sturdy
+
+<a href = "https://www.3ieimpact.org/blogs/beyond-counterfactuals-making-transparency-reproducibility-and-ethics-tre-central-rigorous"> Link Here </a>
+
+#### 2018
+**What's the deal with Push Button Replication?**
+
+<a href = "http://www.3ieimpact.org/blogs/whats-deal-push-button-replications"> Link Here </a>
+
+#### 2017
+**Swachch Bharat Mission: Need clarity on actual impact** </br> *with* P.V.Apoorva and Anjali Krishnan
+
+<a href = "http://bit.ly/2z1X6BI"> Link Here </a>
