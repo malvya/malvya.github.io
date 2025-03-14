@@ -1,14 +1,17 @@
 ---
 layout: page
 title: Curriculum vitae
+description: "Malvya Chintakindi's CV"
+published-title: CV last updated
+date: 2025-02-28
 excerpt: My current CV
 execute:
   freeze: true  # never re-render during project render
 engine: knitr 
 resources:
-  - "cv.pdf"
+  - "CV_2025.pdf"
 cv:
-  pdf: "cv.pdf"
+  pdf: "CV_2025.pdf"
 ---
 
 ```{css echo=FALSE}
@@ -41,10 +44,3 @@ cv:
 </div>
 ```
 
-
-
-```{=html}
-<div  style="margin: 30px; text-align: center;">
-<a class="btn btn-primary" href="https://www.marvinschmitt.com/blog/website-tutorial-quarto/" role="button" target="_blank" style="padding: 15px 30px;">View the tutorial for this template (+ download link)</a>
-</div>
-```

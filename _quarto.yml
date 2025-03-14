@@ -2,7 +2,7 @@
 
 # website settings
 website:
-  title: ""
+  title: "MC"
   favicon: assets/img/turtle.webp
   site-url: https://malvya.github.io
   repo-url: https://github.com/sayakkhatua/malvya.github.io
@@ -18,7 +18,7 @@ website:
     right:
       - text: CV
         aria-label: "CV"
-        href: "cv/index.qmd"
+        href: "cv/CV_2025.pdf"
       - text: Research
         aria-label: "Research"
         href: "research/index.qmd"
@@ -71,7 +71,7 @@ format:
     page-layout: full
     smooth-scroll: true
     theme: 
-      - lumen
+      - yeti
       - html/styles1.scss
     toc: false
     code-link: true

@@ -2,7 +2,7 @@
 title: "Malvya Chintakindi"
 pagetitle: "Malvya Chintakindi | About"
 subtitle: "PhD Candidate, Department of Anthropology, University of Oregon"
-image: img/malvya.jpeg
+image: assets/img/malvya.png
     
 about:
   id: hero-heading
