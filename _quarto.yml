@@ -70,7 +70,7 @@ format:
     page-layout: full
     smooth-scroll: true
     theme: 
-      - yeti
+      - morph
       - html/styles1.scss
     toc: false
     code-link: true

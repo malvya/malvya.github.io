@@ -11,14 +11,11 @@ about:
   image-shape: rounded
   links:
     - icon: twitter
-      text: Twitter
-      href: "https://twitter.com/sayak_khatua"
+      text: X
+      href: "https://x.com/MalvyaC"
     - icon: linkedin
       text: LinkedIn
-      href: "https://www.linkedin.com/in/sayak-khatua/"
-    - icon: github
-      text: Github
-      href: "https://github.com/malvya"
+      href: "https://www.linkedin.com/in/malvya-chintakindi/"
     - icon: envelope
       text: Email
       href: "mailto:malvyac@uoregon.edu"
@@ -29,6 +26,6 @@ execute:
   freeze: true
 ---
 
+Hi! I am Malvya, a 5th year PhD candidate in Anthropology from Hyderabad (metropolitan city in Southern India). Prior to embarking on my PhD, I was an international development practitioner working with grassroots research/implementation firms, international donor organizations and governments across India and Africa. I hold a background in public policy, development studies and journalism.
 
-Previously, I worked as an Evaluation Specialist for the International Initiative for Impact Evaluation (3ie), on transparency, reproducibility and ethical evidence (TREE) and managed international development projects across Asia and Africa. I also co-founded the Data innovations group at 3ie, which works on pushing the frontiers of evaluation research by using innovative methodologies and data.
-
+My dissertation focuses on how marginalized women navigate aspirations for a "good life" within the constraints of caste, class and informal labor in Hyderabad's urban settlements. I am passionate about global south collaborations, feminist and community based participatory research, program evaluation and translating theory and research findings into real life applications.

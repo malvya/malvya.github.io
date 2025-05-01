@@ -4,132 +4,85 @@ toc: true
 link-external-newwindow: true
 ---
 
-## Working Papers
+## Dissertation Research 
 
-**Private credit and Property prices: New insights into this nexus**</br> *with* <a href="https://sites.google.com/site/cesarruy"> Cesar Rodriguez </a>
+This dissertation project examines how class, caste, and gender intersect in urban slums of India, to shape aspirations for “good life” for women belonging to lower caste communities, predominantly engaged as informal labor. This ethnographic inquiry examines the lived experiences of Dalit (individuals belonging to lowest caste communities in India, also formerly known as “untouchables”) Women, navigating the fragile informal labor sector which offers very minimal official social protection in India. My research explores three interconnected dimensions about Dalit women workers in India's informal labor sector. I seek to understand their aspirations for a "good life" and examine how the intersecting dimensions of class, caste, and gender within urban slums shape these aspirations. Building on this foundation, I investigate the key barriers and enabling factors these women experience in their pursuit of a good life. I explore how these aspirations and their pursuit carry important implications for both state and non-state actors who design and implement policies and programs intended to promote Dalit women’s well-being. Through this multi-layered inquiry, I illuminate the personal and social dimensions of Dalit women’s experiences and their broader significance for state and non-state policies and programs aimed at promoting their well-being. 
 
+Barring Introduction, Methodology, Literature Review and Conclusion chapters, my dissertation is organized into four substantive ethnographic chapters:</br>
+
+*Chapter 1*: **Dreams Beyond Discrimination: Young and Middle-aged Dalit Women's Strategies for Mobility** 
 <details>
 
-<summary>Abstract</summary>
-
-The relationship between the dynamics of property prices and private credit has long been a focal point for economists and policymakers, particularly given its role in financial stability. Understanding this relationship is especially crucial for developing economies, where financial markets are often less mature and more vulnerable to external shocks. This paper examines this relationship using quarterly data from 27 countries spanning 1982 to 2021. Through an instrumental variables approach that addresses endogeneity concerns, we identify three key findings. First, property price growth consistently drives private credit growth across both developed and developing economies, with a one percentage point increase in property prices associated with a 0.35 percentage point rise in private credit growth. Second, conventional macroeconomic factors such as interest rates, inflation, and GDP growth affect credit dynamics differently across development levels. Third, external factors, particularly trade openness and commodity price fluctuations, play an especially significant role in shaping credit dynamics in developing countries. Additionally, our analysis suggests that the property price-credit nexus has evolved, with notable shifts occurring around major economic events. Our results are robust to various sensitivity checks and alternative specifications and methodologies. These findings have important implications for the design of macroprudential policies, especially in developing economies where institutional capacities may differ from more developed markets.
+<summary>Details</summary>
+This chapter is crucial for establishing how the current generation of working women navigate structural barriers while pursuing upward mobility. By focusing on their strategies for balancing traditional obligations with modern aspirations, particularly through their children's education, this chapter challenges victimhood narratives while revealing the sophisticated ways these women exercise agency despite severe constraints. This chapter demonstrates how they craft futures by leveraging limited resources and opportunities within oppressive social structures.
 
 </details>
 
-Status: *Under Review at Journal of Real Estate Finance and Economics*
-
-**To not move forward is to fall behind: Evidence of Policy Failure from India**</br>
-
-<a href="https://oregonstate.box.com/s/ecnb0ngyq0awrtx296v61si9gdvyt5h4"> Summary </a>
-
+*Chapter 2*: **Developing the 'Good Life': State Policies, NGO Interventions, and Dalit Women's Aspirations** 
 <details>
 
-<summary>Abstract</summary>
-
-This paper studies the effect of non-implementation of education reforms on enrollment levels at the elementary school level in India. The paper exploits a unique natural experiment in which the Right of Children to Free and Compulsory Education (RTE) Act of 2009 was implemented in India, except for the state (now Union Territory(UT)) of Jammu \& Kashmir (J\&K). Using a quasi-experimental synthetic control approach, I estimate the causal impact of the non-implementation of the RTE act on enrollment levels in elementary schools in J\&K. Using household surveys and administrative data from the Ministry of Education, I find that on average nearly 300,000 (16.8\% more than pre-RTE enrollments) additional elementary-aged children could have enrolled annually if the act had been rolled out in J\&K. I demonstrate differential impacts of non-implementation of RTE across primary and upper primary levels of schooling and find that the negative effects are more pronounced at the upper primary level. I establish the economic significance through Mincer wage equations showing substantial lifetime earnings losses. I find that children in J\&K who complete elementary education earn 46\% more than children who do not.
+<summary>Details</summary>
+This chapter critically examines the gap between institutional approaches and women's lived realities. This analysis is essential because it reveals how development policies often fail to account for the intersectional nature of discrimination these women face. By scrutinizing programs like the National Domestic Worker Policy alongside NGO initiatives, the chapter provides crucial insights for reforming interventions to better serve lower caste women workers' actual needs and aspirations. 
 
 </details>
 
-Status: *Draft coming soon*
-
-**The Reliability of Replications: A Study in Computational Reproductions** </br> *with* Nate Breznau et. al.
-
-<a href="https://www.doi.org/10.31235/osf.io/j7qta"> Preprint </a>
-
+*Chapter 3*: **Wisdom in Survival: Elderly Dalit Women Workers' Narratives of Resistance**
 <details>
-
-<summary>Abstract</summary>
-
-This paper reports findings from a crowdsourced replication. Eighty-five independent teams attempted a computational replication of results reported in an original study of policy preferences and immigration by fitting the same statistical models to the same data. The replication involved an experimental condition. Random assignment put participating teams into either the transparent group that received the original study and code, or the opaque group receiving only a methods section, rough results description and no code. The transparent group mostly verified the numerical results of the original study with the same sign and p-value threshold (95.7%), while the opaque group had less success (89.3%). Exact numerical reproductions to the second decimal place were far less common (76.9% and 48.1%), and the number of teams who verified at least 95% of all effects in all models they ran was 79.5% and 65.2% respectively. Therefore, the reliability we quantify depends on how reliability is defined, but most definitions suggest it would take a minimum of three independent replications to achieve reliability. Qualitative investigation of the teams’ workflows reveals many causes of error including mistakes and procedural variations. Although minor error across researchers is not surprising, we show this occurs where it is least expected in the case of computational reproduction. Even when we curate the results to boost ecological validity, the error remains large enough to undermine reliability between researchers to some extent. The presence of inter-researcher variability may explain some of the current “reliability crisis” in the social sciences because it may be undetected in all forms of research involving data analysis. The obvious implication of our study is more transparency. Broader implications are that researcher variability adds an additional meta-source of error that may not derive from conscious measurement or modeling decisions, and that replications cannot alone resolve this type of uncertainty.
+<summary>Details</summary>
+This chapter holds special significance for understanding the historical context of resistance strategies. Through documenting elderly women's accumulated knowledge and survival strategies across decades of navigating discrimination, this chapter preserves crucial oral histories while illuminating how coping mechanisms have evolved over generations. Their perspectives on maintaining dignity despite systematic dehumanization offer valuable lessons for both scholarly understanding and practical interventions.</br>
 
 </details>
 
-Status: *Accepted Royal Society Open Science*
-
-## Work-in-progress
-
-**Improving school management in a low-income country: Experimental evidence from India** </br> *with* <a href="https://sites.google.com/site/toddpugatch/">Todd Pugatch</a> , <a href="http://ketkisheth.weebly.com">Ketki Sheth</a>, <a href="https://sites.google.com/view/nshakira-rukundo/home">Emmanuel Rukundo</a>
-
+*Chapter 4*: **Aspirations Across Space: Comparative Perspectives on 'Good Life' in Urban Slums**
 <details>
+<summary>Details</summary>
+This chapter makes a vital contribution by synthesizing findings across three urban slums to develop broader theoretical insights. This comparative analysis is essential for understanding how urban geography, social networks, and institutional structures influence aspiration formation among marginalized women. By examining these patterns across different contexts, the chapter will advance anthropological theory while providing concrete recommendations for policy interventions that can better support lower caste women workers' pursuit of dignified lives.
 
-<summary>Abstract</summary>
+## Pre-PhD Research Experience
 
-... Coming soon
+**3ie** </br>
+While at the 3ie, I served as an evaluation and learning research associate where I managed two large grant programmes:
 
+1) Swashakt-Empowering Indian Women's Collectives (USD 7.3 million): I led the drafting of the CfP, facilitated interviews with potential civil societies who could benefit from the grant, conducted inital fieldwork to vet and closely monitor development interventions of identified civil societies and managed all the grant applications. I co-authored the comprehensive Call for Proposals, establishing clear criteria that aligned with our strategic objectives. Through rigorous stakeholder engagement, I personally conducted evaluation interviews with over 30 civil society organizations, identifying those with the greatest potential for transformative impact. 
+<details>
+<summary>Read more</summary>
+My role extended beyond desk work - I conducted extensive field visits across multiple districts to validate the ground realities of shortlisted organizations. This hands-on due diligence involved observing ongoing interventions, interviewing beneficiaries, and assessing organizational capacity firsthand. I established monitoring frameworks to ensure accountability and impact measurement throughout the grant lifecycle.
+Managing the competitive application process, I oversaw the evaluation of 30+ proposals, coordinated with internal review committees, and provided strategic guidance to applicants. This comprehensive approach ensured that our grants supported the most effective and sustainable development initiatives in the region.
 </details>
 
-Status: *Data collection*
+2) Agricultural Innovation Evidence Program in Africa (USD 1 million): I helped close the Agricultural Innovations Evidence Program in Africa by facilitating knowledge and research sharing workshops in Rome, Italy and in Nairobi, Kenya, with research stakeholders including local communities, government officials, academics and civil societies. I successfully concluded the Agricultural Innovations Evidence Program across Africa by orchestrating high-impact knowledge exchange forums that bridged continents and sectors. As the program's closing lead, I designed and facilitated strategic workshops in both Rome and Nairobi, bringing together a diverse coalition of stakeholders - from grassroots community leaders to senior government officials, renowned academics to frontline civil society practitioners.
+These capstone events weren't just meetings - they were carefully curated platforms for transformative dialogue where three years of groundbreaking research was distilled into actionable policy recommendations. In Rome, I coordinated with international donors and policy experts to ensure our findings would influence global agricultural development strategies. In Nairobi, I created spaces where local communities could directly present their experiences to decision-makers, ensuring that African voices remained central to the narrative.
+My approach emphasized interactive knowledge transfer, using innovative facilitation techniques to break down traditional hierarchies and foster genuine exchange. The result was a series of concrete commitments from key stakeholders and a robust dissemination strategy that continues to influence agricultural innovation policies across the continent.Please read the full report here:
 
-**Where morning feels different: Labor market consequences of state reorganisation in India**
+**Vihara Innovation Network** </br>
+While at the Vihara Innovation Network, I worked in the 
+Gender and Health Vertical which is committed to understanding the complex interplay of gender, sociocultural, and environmental factors that shape health outcomes. We used social norms transformation, capacity building, financial and digital inclusion, and advancing livelihoods for women, to build healthy, resilient, and future-forward communities. I co-led two major ethnographic projects:
 
-<details>
+1) Nourishing Hard to Reach Communities: This was an Ethnography and Human Centered Design project to understand and address malnourishment among tribal populations of Nandurbar and Amravati. Both of them are tribal districts in the western state of Maharashtra. We spent 5 immersive months in both these tribal districts. This “Nourishing Hard to Reach Communities” study is the foundational research for the Nutrition India Programme. The research team spent several weeks in locations across Nandurbar and Amravati, and conducted ethnographic and human centred design research, to build a rich first- hand understanding of the affected cultural groups, and the complex and multi-variate challenges of malnutrition therein. We were further focused on identifying social-cultural-behavioural barriers to providing adequate nutrition and to propose critical areas of intervention that would lead to positive gains. For this task, the research team engaged with a number of different community- based and adjacent stakeholders (including several pregnant women and their families, traditional and systems health functionaries,dais, doctors and health officials). We spent extensive periods observing community life and visually documenting material, home and food cultures, and came away with rich narratives and deep understandings around the complexity of malnutrition. We understood how communities think, behave and talk about food, nourishment, health, infections and illness; how they relate to traditional health providers and the public health system; which mix of behavioural, social, environmental and systemic factors inhibit good nutrition; what local cultures, practices and concepts can be leveraged to improve nutrition; and most importantly, the critical needs and opportunities exist that if addressed would lead to positive effects in nutrition for hard to reach children. Please read the full report here: https://reacheachchild.com/pdf/Tribal%20Ethnography-Amravati%20&%20Nandurbar-%20Nutrition%20India%20Programme.pdf  
 
-<summary>Abstract</summary>
+2) Mapping social and environmental barriers to maternal-child health: This was an ethnography project to map and address how social and environmental barriers prevent young mothers, mothers in general and infants are able/unable to access health care in two states of Uttar Pradesh and Bihar. Our team spent an immersive 4 months in two different districts of Bahraich in Uttar Pradesh and Darbhanga in Bihar. In these two diverse geographies, terrains and community attitudes, we understood that social and environmental barriers have prevented families from accessing institutional health care. Additionally, we unearthed several corrupt and practices by local health care staff which created a systemic problem in how communities perceive doctors and nurses.Our ethnography became more than research. It became evidence of a healthcare crisis hidden in plain sight, where social customs and environmental challenges were compounded by corruption so endemic it had become normal.
 
-... Coming soon
+**Sehgal Foundation** </br>
+While at Sehgal Foundation, I spent a substantial number of days in the rural parts of Rajasthan and Haryana. I worked on a multitude of projects concerning local governance, women's collectives and addressing small-scale farmers' well-being. A brief description of few selected projects:
 
-</details>
+1) Understanding women's empowerment to develop a customized measurement index: We worked directly with women from over 40 villages, our interdisciplinary team conducted immersive ethnographic research to understand how rural women define and experience empowerment in their daily lives.Through participatory workshops, large-scale surveys, in-depth interviews, and community dialogues, we mapped both visible and invisible dimensions of agency - from decision-making power within households to mobility patterns and access to resources.This 6-month project represented a critical shift from measuring empowerment through a universal lens to developing tools that capture the true complexity of women's agency in rural India. What emerged challenged conventional empowerment frameworks. Women in Rajasthan defined empowerment through the lens of 'izzat' (honor) and family wellbeing, while Haryana's women emphasized economic independence despite purdah restrictions. We discovered that seemingly small freedoms - like having a personal mobile phone or choosing when to visit the local market - held profound significance in these contexts. The research revealed hidden forms of agency: women's informal savings groups that operated under the radar of male family members, subtle negotiation tactics used to influence household decisions, and creative workarounds to mobility restrictions. These nuanced expressions of empowerment were invisible to standard measurement tools.
 
-Status: *Data Analysis*
+2) Understanding local governance: we created unprecedented spaces for democratic dialogue where village heads and citizens sat face-to-face to confront the barriers blocking effective local governance. This innovative project deployed the Community Score Card methodology to transform typically hierarchical relationships into collaborative problem-solving sessions.
+Over six months, our team facilitated structured dialogues in 5 villages across both districts. These gatherings brought together diverse stakeholders - from marginalized women and landless laborers to village sarpanches and ward members - to collectively assess and score the performance of local governance systems.In Samastipur, discussions revealed systematic exclusion of marginalized communities from development schemes, while in Nuh, participants highlighted how traditional power structures undermined women's participation in gram sabhas. The face-to-face format created accountability moments where officials had to respond directly to citizen concerns, often for the first time.
 
-**Connecting Communities, Reducing Conflict: Evidence from India's Rural Road Program**
+3) Understanding agricultural innovations: In the arid fields of Nuh district, Haryana, where traditional farming practices meet modern pressures, our team conducted an in-depth study to understand the complex web of factors preventing agricultural innovation and gender equality in one of India's most conservative farming regions. Over eight months, we embedded ourselves in 5 farming communities, employing a mixed-methods approach that combined ethnographic observation, focus group discussions, and detailed household surveys across consenting farming families. Our research revealed a paradox: while farmers desperately needed innovative solutions to combat declining yields and water scarcity, deep-rooted social structures and economic constraints created formidable barriers to change. Our research uncovered that the most successful agricultural innovations came through women's informal networks - kitchen gardens using innovative water conservation became models for larger farms. Yet these successes remained invisible in official agricultural extension programs. We also found that farmers weren't resistant to innovation itself, but to the risk of failure in an environment with no safety nets. The few farmers who adopted new techniques did so only after seeing successful results in neighboring fields for multiple seasons. This research challenges conventional agricultural development approaches by demonstrating that technical solutions alone cannot transform farming in Nuh. Instead, addressing gender inequities and building trust-based knowledge systems are prerequisites for agricultural innovation in this deeply traditional yet climate-vulnerable region.
 
-<details>
+**Outline India** </br>
+As a versatile research professional, I built and managed comprehensive research projects from conception to completion, developing field reports and proposals across diverse sectors including child education, agricultural practices, and sexual and reproductive health. My work involved transforming complex field data into compelling narratives that informed policy decisions and drove social impact across multiple development initiatives.
+ I directed aspects of field management, from training research teams to supervising data collection activities across challenging rural environments. I conducted strategic field visits to monitor progress, troubleshoot issues, and ensure adherence to research protocols. This hands-on leadership approach maintained high standards of data quality while building strong relationships with local communities and field staff. Beyond operational excellence, I contributed strategically to organizational growth by conducting a comprehensive evaluation of Outline India's research outcomes and impact. I managed end-to-end project lifecycles, maintained seamless client communications, and spearheaded business development initiatives that resulted in sustained partnerships. Additionally, I created engaging content for social media and organizational publications, effectively communicating our research findings to diverse audiences and enhancing our digital presence in the development sector. A brief description of few selected projects: </br>
+ 
+1) Rapid Assessment of phasing out pesticide use:This groundbreaking research initiative documented the successful phasing out of Monocrotophos (MCP), a WHO Class 1b hazardous pesticide, among cotton farmers in Dhoraji, Gujarat. Led by Outline India and funded by the Better Cotton Initiative (BCI), this 6-month evaluation examined how farmer education, community engagement, and the introduction of biological alternatives transformed pesticide practices.
+Working with AFPRO as the implementing partner, the research team conducted immersive fieldwork across two villages, utilizing focus groups, in-depth interviews, and quantitative analysis. The study revealed a dramatic reduction in MCP usage—from 0.35 kg/ha in 2014-15 to 0.08 kg/ha in 2016-17—achieved through strategic interventions including on-field demonstrations, farmer training, and the promotion of bio-controls like Beauveria Bassiana.
+Key outcomes include increased farmer awareness of pesticide health hazards, widespread adoption of integrated pest management practices, and successful collaboration between agricultural institutions (JAU), government extension services (KVK), and local implementing agencies. The project demonstrates how behavioral change in agricultural practices can be achieved through sustained community engagement and evidence-based alternatives.
+This evaluation provides a replicable model for phasing out hazardous pesticides in smallholder farming contexts across India, emphasizing the critical role of trust-building, field demonstrations, and decentralized information dissemination in driving sustainable agricultural transformation. Read the full report here: https://bettercotton.org/wp-content/uploads/2018/11/India_Outcome-Evaluation-Report_2018.pdf
 
-<summary>Abstract</summary>
-
-... Coming soon
-
-</details>
-
-Status: *Data Analysis*
-
-**When Waters Recede: Impact of Extreme Weather Events on Child Labor**
-
-<details>
-
-<summary>Abstract</summary>
-
-... Coming soon
-
-</details>
-
-Status: *Data cleaning*
-
-**Learning or Earning: How Mandatory Education Shapes Child Labor in India**
-
-<details>
-
-<summary>Abstract</summary>
-
-... Coming soon
-
-</details>
-
-Status: *Data cleaning*
-
-**The Great (research) Divide: The long term dynamics of Coauthorship Networks in International Development**
-
-<details>
-
-<summary>Abstract</summary>
-
-... Coming soon
-
-</details>
-
-Status: *Gathering data*
-
-## Dormant Papers
-
-**The Use of Behavioural-science Informed Interventions to Promote Latrine Use in Rural India: A Synthesis of Findings** </br>
-
-*with* Charlotte Lane and Bethany Caruso
-
-<a href="https://www.doi.org/10.31222/osf.io/g7cmd"> Preprint </a> <a href="https://doi.org/10.7910/DVN/IDJ8FJ"> Data and Code </a>\
-
-**Making data accessible: lessons learned from computational reproducibility of impact evaluations** </br>
-
-*with* Neeta Goel and Marie Gaarder
-
-<a href="https://www.doi.org/10.31219/osf.io/4jvq2"> Preprint </a> <a href="https://doi.org/10.7910/DVN/FPNITS"> Data and Code </a>\
+2) STiR Education’s project of Improving the quality of primary education through teacher motivation: As the Field Supervisor and Research Tools Trainer for this educational quality improvement initiative, I managed this project end-to-end, playing a pivotal role in ensuring successful data collection across Ramnagara district. My responsibilities spanned multiple domains, from project planning and operational oversight to capacity building and quality assurance.
+In my comprehensive role, I led and coordinated field teams operating across all four blocks of Ramnagara - Ramnagara, Magadi, Kanakapura, and Channapatna. This involved developing the overall project implementation strategy, managing complex logistics in diverse rural and semi-urban settings, providing real-time guidance to enumerators, and troubleshooting challenges as they arose. I maintained close oversight of daily field operations, ensuring that all data collection activities adhered to research protocols and maintained consistency across locations.
+As the Research Tools Trainer, I designed and delivered comprehensive training programs for enumerators on both quantitative survey instruments and qualitative research methods. This included developing training materials, conducting hands-on practice sessions, and ensuring that all team members thoroughly understood survey questions and proper administration techniques. I trained field staff on interview protocols, focus group facilitation, and the nuances of working in educational settings, emphasizing the importance of maintaining objectivity and building rapport with school staff and students.
+Quality assurance formed a critical component of my end-to-end management. I implemented rigorous monitoring systems including field accompaniments, spot checks, and back-checks to verify data accuracy. I personally reviewed completed surveys for completeness and consistency, providing immediate feedback to enumerators to address any issues. These quality control measures were essential in maintaining the integrity of the data collection process and ensuring that the insights gathered would be reliable for STiR Education's educational improvement initiatives.
+ My work also encompassed data management responsibilities, overseeing data entry processes, initial data cleaning, and synchronization of field data with central databases. I maintained detailed documentation of field activities, challenges encountered, and solutions implemented, providing regular progress reports to project leadership. Through this comprehensive project management role, I ensured that the data collection met the highest standards of quality and reliability, contributing meaningfully to the broader goal of improving primary education outcomes in government schools across Ramnagara district.
