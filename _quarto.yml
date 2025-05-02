@@ -20,7 +20,9 @@ website:
         href: "cv/CV_2025.pdf"
       - text: Research
         aria-label: "Research"
-        href: "research/index.qmd"
+        menu: 
+          - href: "dissertation/index.qmd"
+          - href: "pre_phd/index.qmd"
       - text: Publications
         aria-label: "Publications"
         href: "publications/index.qmd"
@@ -70,7 +72,7 @@ format:
     page-layout: full
     smooth-scroll: true
     theme: 
-      - morph
+      - flatly
       - html/styles1.scss
     toc: false
     code-link: true

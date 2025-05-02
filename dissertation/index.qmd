@@ -1,0 +1,46 @@
+---
+title: "Dissertation"
+toc: true 
+link-external-newwindow: true
+---
+
+This dissertation project examines how class, caste, and gender intersect in urban slums of India, to shape aspirations for “good life” for women belonging to lower caste communities, predominantly engaged as informal labor. This ethnographic inquiry examines the lived experiences of Dalit (individuals belonging to lowest caste communities in India, also formerly known as “untouchables”) Women, navigating the fragile informal labor sector which offers very minimal official social protection in India. My research explores three interconnected dimensions about Dalit women workers in India's informal labor sector. I seek to understand their aspirations for a "good life" and examine how the intersecting dimensions of class, caste, and gender within urban slums shape these aspirations. Building on this foundation, I investigate the key barriers and enabling factors these women experience in their pursuit of a good life. I explore how these aspirations and their pursuit carry important implications for both state and non-state actors who design and implement policies and programs intended to promote Dalit women’s well-being. Through this multi-layered inquiry, I illuminate the personal and social dimensions of Dalit women’s experiences and their broader significance for state and non-state policies and programs aimed at promoting their well-being. 
+
+Barring Introduction, Methodology, Literature Review and Conclusion chapters, my dissertation is organized into four substantive ethnographic chapters:</br>
+
+### *Chapter 1*
+
+**Dreams Beyond Discrimination: Young and Middle-aged Dalit Women's Strategies for Mobility** 
+<details>
+
+<summary>Details</summary>
+This chapter is crucial for establishing how the current generation of working women navigate structural barriers while pursuing upward mobility. By focusing on their strategies for balancing traditional obligations with modern aspirations, particularly through their children's education, this chapter challenges victimhood narratives while revealing the sophisticated ways these women exercise agency despite severe constraints. This chapter demonstrates how they craft futures by leveraging limited resources and opportunities within oppressive social structures.
+
+</details>
+
+### *Chapter 2*
+
+**Developing the 'Good Life': State Policies, NGO Interventions, and Dalit Women's Aspirations** 
+<details>
+
+<summary>Details</summary>
+This chapter critically examines the gap between institutional approaches and women's lived realities. This analysis is essential because it reveals how development policies often fail to account for the intersectional nature of discrimination these women face. By scrutinizing programs like the National Domestic Worker Policy alongside NGO initiatives, the chapter provides crucial insights for reforming interventions to better serve lower caste women workers' actual needs and aspirations. 
+
+</details>
+
+### *Chapter 3*
+
+**Wisdom in Survival: Elderly Dalit Women Workers' Narratives of Resistance**
+<details>
+<summary>Details</summary>
+This chapter holds special significance for understanding the historical context of resistance strategies. Through documenting elderly women's accumulated knowledge and survival strategies across decades of navigating discrimination, this chapter preserves crucial oral histories while illuminating how coping mechanisms have evolved over generations. Their perspectives on maintaining dignity despite systematic dehumanization offer valuable lessons for both scholarly understanding and practical interventions.</br>
+
+</details>
+
+### *Chapter 4*
+
+**Aspirations Across Space: Comparative Perspectives on 'Good Life' in Urban Slums**
+<details>
+<summary>Details</summary>
+This chapter makes a vital contribution by synthesizing findings across three urban slums to develop broader theoretical insights. This comparative analysis is essential for understanding how urban geography, social networks, and institutional structures influence aspiration formation among marginalized women. By examining these patterns across different contexts, the chapter will advance anthropological theory while providing concrete recommendations for policy interventions that can better support lower caste women workers' pursuit of dignified lives.
+
