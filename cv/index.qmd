@@ -1,6 +1,8 @@
 ---
 layout: page
 title: Curriculum vitae
+toc: true 
+link-external-newwindow: true
 description: "Malvya Chintakindi's CV"
 published-title: CV last updated
 date: 2025-05-14
