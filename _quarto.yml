@@ -4,7 +4,7 @@ website:
   title: "MC"
   favicon: assets/img/turtle.webp
   site-url: https://malvya.github.io
-  repo-url: https://github.com/sayakkhatua/malvya.github.io
+  repo-url: https://github.com/malvya/malvya.github.io
   page-navigation: true
   #back-to-top-navigation: true
   

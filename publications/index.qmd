@@ -3,15 +3,25 @@ title: ""
 toc: true 
 link-external-newwindow: true
 ---
-## Articles
+## Book Chapters
+
+#### 2025
+
+**Dalit Intersectionality as Method and Theory: Women’s Narratives from the Margins of Urban Progress** </br> *In Intersectionality beyond Eurocentrism (forthcoming)* </br>
+<a href="https://research.tuni.fi/inrenet/"> Link Here </a> <details>
+<summary>Abstract</summary> 
+
+</details>
+
+## Peer-reviewed Articles
 
 #### 2023
 
 </details>
 
-**Informal Labor Blues: Gendered Effects of COVID-19 and Beyond on Women Belonging to Backward Castes in Hyderabad, India** </br> *Journal of the Indian Anthropological Society*
-<details>
+**Informal Labor Blues: Gendered Effects of COVID-19 and Beyond on Women Belonging to Backward Castes in Hyderabad, India** </br> *Journal of the Indian Anthropological Society* </br> <a href="https://www.waunet.org/wcaa/archive/downloads/wcaa/dejalu/dejalu11-2/Journal-of-the-Indian-Anthropologica-Society.pdf"> Link Here </a> <details>
 <summary>Abstract</summary>
+
 
 </details> 
 
@@ -20,6 +30,18 @@ link-external-newwindow: true
 <summary>Abstract</summary>
 
 </details>
+
+#### 2019
+
+**Gender transformative approach to societal empowerment** </br> *Indian Journal of Women and Social Change* </br> <a href="https://doi.org/10.1177/2455632719836805"> Link Here </a> <details>
+<summary>Abstract</summary>
+
+</details>
+
+**Re-examining WASH Outcomes for Behaviour Change and Development: Case of two Districts in Bihar** </br> *Indian Association of Social Science Institutions (IASSI) Quarterly-Contributions to Indian Social Science*
+with Saurabh Sood
+
+## Research Essays, Articles and Reports
 
 #### 2022
 
@@ -33,20 +55,20 @@ href="https://www.3ieimpact.org/sites/default/files/2020-09/TW4-Workshops-report
 
 #### 2019
 
-**Gender transformative approach to societal empowerment** </br> *Indian Journal of Women and Social Change* </br> <a href="https://doi.org/10.1177/2455632719836805"> Link Here </a> <details>
-<summary>Abstract</summary>
+**Nourishing Hard to Reach Communities** </br> *Vihara Innovation Network for Reckitt Benckiser* with Gayathri Sreedharan, Divya Datta, Neha Jain </br> <a
+href="https://reacheachchild.com/pdf/Tribal%20Ethnography-Amravati%20&%20Nandurbar-%20Nutrition%20India%20Programme.pdf"> Link Here </a>
 
-**Re-examining WASH Outcomes for Behaviour Change and Development: Case of two Districts in Bihar** </br> *Indian Association of Social Science Institutions (IASSI) Quarterly-Contributions to Indian Social Science*
-with Saurabh Sood
-
-**Change through Communities: Lessons from District Bureaucrats** </br> *Sehgal Foundation Newsletter* 
+**Change through Communities: Lessons from District Bureaucrats** </br> *Sehgal Foundation Newsletter*  </br> <a
+href="https://www.smsfoundation.org/wp-content/uploads/2020/07/Change-Through-Communities.pdf"> Link Here </a>
 
 #### 2018
 
-**Positive Deviance and Appreciative Inquiry: The story of slowly transforming Sadai** </br> *The Village Square Journal*
+**Positive Deviance and Appreciative Inquiry: The story of slowly transforming Sadai** </br> *The Village Square Journal* </br> <a
+href="https://www.smsfoundation.org/news/positive-deviance-and-appreciative-inquiry-the-story-of-slowly-transforming-sadai-the-village-square/"> Link Here </a>
 
 **Do governance and development go hand in hand** </br> *New Delhi Times*
-with Saurabh Sood
+with Saurabh Sood </br> <a
+href="https://www.newdelhitimes.com/do-governance-and-development-go-hand-in-hand/"> Link Here </a>
 
 **Measuring happiness and sustainable development in India** </br> *SDG Philanthropy Platform*
 with Saurabh Sood
@@ -54,20 +76,12 @@ with Saurabh Sood
 #### 2017
 
 **Rapid Assessment of the Phasing Out of Hazardous Pesticides in Dhoraji, Gujarat** </br> *Better Cotton Initiative*
-with Prerna Mukharya, Paramjeet Chawla
+with Prerna Mukharya, Paramjeet Chawla </br> <a
+href="https://bettercotton.org/documents/rapid-assessment-of-phasing-out-a-hazardous-pesticide-in-dhoraji-gujarat-by-outline-india/"> Link Here </a>
 
-## Book Chapters
-
-#### 2025
-
-**Dalit Intersectionality as Method and Theory: Women’s Narratives from the Margins of Urban Progress** </br> *In Intersectionality beyond Eurocentrism (forthcoming)* </br>
-<a href="https://research.tuni.fi/inrenet/"> Link Here </a> <details>
-<summary>Abstract</summary> 
-
-</details>
 
 ## Work in progress
 
-**Navigating Margins: Gender, Identity, and Developmental Discourse among Ethnic Minorities** </br> *with* Sayak Khatua
+**Navigating Margins: Gender, Identity, and Developmental Discourse among Ethnic Minorities** </br> *with* [Sayak Khatua](https://sayakkhatua.github.io)
 
-**Threads of Survival: Kinship, Gender, and Intersectional Dynamics in Urban Slums** </br> *with* Sayak Khatua
+**Threads of Survival: Kinship, Gender, and Intersectional Dynamics in Urban Slums** </br> *with* [Sayak Khatua](https://sayakkhatua.github.io)
