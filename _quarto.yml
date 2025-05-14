@@ -17,7 +17,7 @@ website:
     right:
       - text: CV
         aria-label: "CV"
-        href: "cv/CV_2025.pdf"
+        href: "cv/index.qmd"
       - text: Research
         aria-label: "Research"
         menu: 
