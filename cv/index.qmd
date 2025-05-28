@@ -5,7 +5,7 @@ toc: true
 link-external-newwindow: true
 description: "Malvya Chintakindi's CV"
 published-title: CV last updated
-date: 2025-05-14
+date: 2025-05-28
 excerpt: My current CV
 execute:
   freeze: true  # never re-render during project render
