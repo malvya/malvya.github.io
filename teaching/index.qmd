@@ -4,11 +4,9 @@ toc: true
 link-external-newwindow: true
 ---
 
-## University of Oregon (Instructor)
+## University of Oregon (Instructor/Graduate Teaching Fellow)
 ANTH 220-Introduction to Nutritional Anthropology (Winter 2025) </br>
-ANTH 165-Sexuality and Culture (Summer 2023) 
-
-## University of Oregon (Graduate Teaching Fellow)
+ANTH 165-Sexuality and Culture (Summer 2023) </br>
 ANTH 114-Pirates and Piracy (Fall 2021) </br>
 ANTH 331-Cultures India and South Asia (Winter 2022) </br>
 ANTH 165-Sexuality and Culture (Spring

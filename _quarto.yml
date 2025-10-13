@@ -76,7 +76,7 @@ format:
     smooth-scroll: true
     theme: 
       - flatly
-      - html/styles1.scss
+      - html/styles2.scss
     toc: false
     code-link: true
     anchor-sections: true

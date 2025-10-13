@@ -1,0 +1,390 @@
+/*-- scss:defaults --*/
+
+/* Enhanced theme for Cultural Anthropology PhD - Ethnographic Research Focus */
+
+// Base grayscale with warmer, earthier tones
+$white:    #fefefe !default;
+$gray-100: #f9f8f6 !default;
+$gray-200: #f0ede8 !default;
+$gray-300: #e6e1d8 !default;
+$gray-400: #d4cfc4 !default;
+$gray-500: #a8a298 !default;
+$gray-600: #7d7669 !default;
+$gray-700: #5a5248 !default;
+$gray-800: #3d3529 !default;
+$gray-900: #2a251c !default;
+$black:    #1a1612 !default;
+
+// Curated palette inspired by ethnographic materials and field photography
+$dusty-rose:    #d4a574 !default;  // Warm terracotta
+$sage:          #8b9a7a !default;  // Muted sage green
+$clay:          #c17b63 !default;  // Earthy clay
+$ochre:         #cc8b3d !default;  // Golden ochre
+$indigo:        #4a5568 !default;  // Deep slate
+$burgundy:      #8b4a42 !default;  // Rich burgundy
+$forest:        #3d5a4a !default;  // Deep forest green
+$amber:         #d4a344 !default;  // Warm amber
+$stone:         #7a7265 !default;  // Weathered stone
+$copper:        #b87333 !default;  // Oxidized copper
+$sepia:         #a0956b !default;  // Vintage sepia
+$charcoal:      #4a453c !default;  // Deep charcoal
+
+// Semantic color assignments
+$primary:   $clay !default;
+$secondary: $stone !default;
+$success:   $forest !default;
+$info:      $sage !default;
+$warning:   $amber !default;
+$danger:    $burgundy !default;
+$light:     $gray-200 !default;
+$dark:      $charcoal !default;
+
+// Typography enhancements
+$font-family-serif: "Crimson Text", "Libre Baskerville", Georgia, serif !default;
+$font-family-sans: "Source Sans Pro", "Lato", system-ui, sans-serif !default;
+$font-family-mono: "Fira Code", "JetBrains Mono", monospace !default;
+
+// Links with sophisticated hover effects
+$link-color: $primary !default;
+$link-decoration: none !default;
+$link-hover-color: $burgundy !default;
+$link-hover-decoration: underline !default;
+$link-transition: all 0.3s ease !default;
+
+// Footer with earthy sophistication
+$footer-bg: linear-gradient(135deg, $gray-900 0%, $charcoal 100%) !default;
+$footer-fg: $gray-300 !default;
+
+// Code styling with archival feel
+$code-bg: $gray-200 !default;
+$code-color: $charcoal !default;
+$code-border: 1px solid $gray-300 !default;
+
+// TOC with academic styling
+$toc-color: $ochre !default;
+$toc-font-size: 0.95em !default;
+$toc-border-color: $dusty-rose !default;
+
+// Interactive elements
+$btn-code-copy-color-active: $amber !default;
+$btn-hover-transform: translateY(-2px) !default;
+
+// Academic paper styling
+$blockquote-border: 4px solid $dusty-rose !default;
+$blockquote-bg: $gray-100 !default;
+$blockquote-font-style: italic !default;
+
+/*-- scss:rules --*/
+
+// Enhanced typography for academic content
+body {
+    font-family: $font-family-serif;
+    line-height: 1.7;
+    color: $gray-800;
+    background: linear-gradient(135deg, $white 0%, $gray-100 100%);
+}
+
+// Sophisticated link styling
+a {
+    color: $link-color;
+    text-decoration: $link-decoration;
+    transition: $link-transition;
+    border-bottom: 1px solid transparent;
+    
+    &:hover {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+        border-bottom-color: $link-hover-color;
+        transform: translateY(-1px);
+    }
+}
+
+// Enhanced blockquotes for ethnographic observations
+blockquote {
+    border-left: $blockquote-border;
+    background: $blockquote-bg;
+    padding: 1.5rem 2rem;
+    margin: 2rem 0;
+    border-radius: 0 8px 8px 0;
+    font-style: $blockquote-font-style;
+    position: relative;
+    
+    &::before {
+        content: "\201C";
+        font-size: 3rem;
+        color: $dusty-rose;
+        position: absolute;
+        top: -0.5rem;
+        left: 1rem;
+        font-family: Georgia, serif;
+    }
+    
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// Sophisticated code blocks
+pre {
+    background: $code-bg;
+    border: $code-border;
+    border-radius: 6px;
+    padding: 1.5rem;
+    overflow-x: auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    
+    code {
+        font-family: $font-family-mono;
+        font-size: 0.9em;
+        line-height: 1.5;
+    }
+}
+
+// Enhanced inline code
+code {
+    background: $code-bg;
+    color: $code-color;
+    padding: 0.2em 0.4em;
+    border-radius: 3px;
+    font-family: $font-family-mono;
+    font-size: 0.9em;
+    border: 1px solid $gray-300;
+}
+
+// Elegant table styling for ethnographic data
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 2rem 0;
+    background: $white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    
+    th {
+        background: linear-gradient(135deg, $dusty-rose 0%, $clay 100%);
+        color: $white;
+        padding: 1rem;
+        text-align: left;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+    }
+    
+    td {
+        padding: 1rem;
+        border-bottom: 1px solid $gray-200;
+        transition: background-color 0.3s ease;
+    }
+    
+    tr:hover td {
+        background: $gray-100;
+    }
+}
+
+// Enhanced TOC styling
+.toc-title {
+    color: $toc-color;
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid $toc-border-color;
+    padding-bottom: 0.5rem;
+}
+
+.toc-actions {
+    .bi {
+        color: $toc-color;
+        transition: transform 0.3s ease;
+        
+        &:hover {
+            transform: rotate(180deg);
+        }
+    }
+}
+
+// Academic navigation footer
+.nav-footer {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border: 0 !important;
+    min-height: 4em;
+    background: $footer-bg;
+    color: $footer-fg;
+    padding: 2rem 0;
+    position: relative;
+    
+    // Subtle texture overlay
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M54.627 24.817c0-1.24-.983-2.168-2.274-2.168-1.291 0-2.274.928-2.274 2.168 0 1.24.983 2.168 2.274 2.168 1.291 0 2.274-.928 2.274-2.168zM5.373 24.817c0-1.24-.983-2.168-2.274-2.168C1.808 22.65.825 23.578.825 24.817c0 1.24.983 2.168 2.274 2.168 1.291 0 2.274-.928 2.274-2.168z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") repeat;
+        opacity: 0.3;
+    }
+    
+    > * {
+        position: relative;
+        z-index: 1;
+    }
+
+    a {
+        color: $dusty-rose;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            color: $amber;
+            text-shadow: 0 0 8px rgba(212, 163, 68, 0.3);
+        }
+    }
+
+    .faux-block {
+        display: block;
+        padding-bottom: 0.4em;
+    }
+
+    .nav-footer-center {
+        text-align: center;
+        position: inherit;
+        margin-top: 0;
+        font-style: italic;
+        
+        @media (max-width: map-get($grid-breakpoints, md)) {
+            margin-top: 0.5em;
+            margin-bottom: 1.5em;
+        }
+    }
+
+    .nav-footer-left,
+    .nav-footer-right,
+    .nav-footer-center {
+        text-align: center;
+        width: 100%;
+        min-height: 2em;
+        padding: 0.5rem;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, md)) {
+        .nav-footer-left {
+            text-align: left;
+        }
+
+        .nav-footer-right {
+            text-align: right;
+        }
+
+        .nav-footer-left,
+        .nav-footer-right,
+        .nav-footer-center {
+            flex: 1 1 33%;
+        }
+    }
+}
+
+// Enhanced button styling for interactive elements
+.btn {
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    
+    &:hover {
+        transform: $btn-hover-transform;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    
+    &.btn-primary {
+        background: linear-gradient(135deg, $primary 0%, $burgundy 100%);
+        border: none;
+        
+        &:hover {
+            background: linear-gradient(135deg, $burgundy 0%, $primary 100%);
+        }
+    }
+}
+
+// Image gallery styling for fieldwork photos
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    
+    .gallery-item {
+        background: $white;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        transition: all 0.3s ease;
+        
+        &:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+        }
+        
+        img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        &:hover img {
+            transform: scale(1.05);
+        }
+        
+        .caption {
+            padding: 1.5rem;
+            background: linear-gradient(135deg, $gray-100 0%, $gray-200 100%);
+            
+            h3 {
+                color: $charcoal;
+                margin-bottom: 0.5rem;
+                font-size: 1.1em;
+            }
+            
+            p {
+                color: $gray-700;
+                font-size: 0.9em;
+                line-height: 1.5;
+                margin: 0;
+            }
+        }
+    }
+}
+
+// Field notes styling
+.field-note {
+    background: linear-gradient(135deg, $gray-100 0%, $white 100%);
+    border-left: 4px solid $ochre;
+    padding: 1.5rem;
+    margin: 2rem 0;
+    border-radius: 0 8px 8px 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: relative;
+    
+    &::before {
+        content: "\1F4DD";
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 1.2rem;
+        opacity: 0.6;
+    }
+    
+    .date {
+        color: $stone;
+        font-size: 0.9em;
+        font-style: italic;
+        margin-bottom: 1rem;
+    }
+    
+    .location {
+        color: $clay;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+    }
+}

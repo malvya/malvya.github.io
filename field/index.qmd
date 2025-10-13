@@ -3,17 +3,32 @@ title: "Photos from the Field"
 toc: true 
 link-external-newwindow: true
 ---
-
-![Women in Nandurbar, Maharashtra, India](field1.JPG)
-
 ::: {layout-ncol="2"}
-![](field2.JPG)
-
-![](field3.JPG)
-
-![](field4.jpg)
-
-![](field5.jpg)
-
-![](field6.jpg)
+![](mah1.jpg)
+![](mah8.jpg)
 :::
+::: {layout-ncol="3"}
+![](mah11.jpg)
+
+![](mah2.jpg)
+
+![](mah3.jpg)
+
+![](mah12.jpg)
+
+![](mah13.jpg)
+![](mah14.jpg)
+
+![](mah16.jpg)
+![](mah17.jpg)
+![](mah18.jpg)
+![](mah19.jpg)
+![](mah4.jpg)
+
+
+![](mah9.jpg)
+
+![](mah11.jpg)
+
+:::
+
