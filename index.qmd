@@ -26,7 +26,7 @@ execute:
   freeze: true
 ---
 
-Hi! I am Malvya, a 5th year PhD candidate in Anthropology at the University of Oregon (UO). I am from Hyderabad, a metropolitan city and a major IT and biotechnology hub in Southern India, Telangana state, India. 
+Hi! I am Malvya, a 6th year PhD candidate in Anthropology at the University of Oregon (UO). I am from Hyderabad, a metropolitan city and a major IT and biotechnology hub in Southern India, Telangana state, India. 
 
 Prior to embarking on my doctoral journey, I was an international development practitioner for five years, working with grassroots research/implementation firms, international donor organizations and governments across India and Africa. I hold a background in public policy, development studies and journalism.
 

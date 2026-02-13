@@ -5,15 +5,15 @@ toc: true
 link-external-newwindow: true
 description: "Malvya Chintakindi's CV"
 published-title: CV last updated
-date: 2025-05-28
+date: 2026-02-13
 excerpt: My current CV
 execute:
   freeze: true  # never re-render during project render
 engine: knitr 
 resources:
-  - "CV_2025.pdf"
+  - "Malvya_Chintakindi_CV_Feb_2026.pdf"
 cv:
-  pdf: "CV_2025.pdf"
+  pdf: "Malvya_Chintakindi_CV_Feb_2026.pdf"
 ---
 
 ```{css echo=FALSE}

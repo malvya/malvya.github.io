@@ -29,9 +29,9 @@ website:
       - text: Teaching
         aria-label: "Teaching"
         href: "teaching/index.qmd"
-      - text: Field Work
-        aria-label: "Field Work"
-        href: "field/index.qmd"
+    #  - text: Field Work
+    #    aria-label: "Field Work"
+    #    href: "field/index.qmd"
 
 
 # Don't touch unless you know what you are doing :) ------------
