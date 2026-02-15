@@ -15,10 +15,16 @@ link-external-newwindow: true
 
 ## Peer-reviewed Articles
 
-#### 2025
+#### 2026
 
 **Dreams Deferred: Navigating Urban Aspiration and Vulnerability among Informal Laborers in Hyderabad** </br> *Anthropology of Work Review (Under Review)* </br>  <details>
 <summary>Abstract</summary> 
+
+####2025
+**Ethnography in Crisis - Fieldwork, Care, and Survival in Tumultuous Times** </br> *Journal for the Anthropology of North America (JANA)* </br> <a 
+href="https://www.homefieldanthro.org/kitchen-floor-ethnography-knowledge-from-the-margins/"> Link Here </a> <details>
+<summary>Abstract</summary>
+
 
 #### 2023
 
