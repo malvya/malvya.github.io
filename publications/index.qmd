@@ -5,7 +5,7 @@ link-external-newwindow: true
 ---
 ## Book Chapters
 
-#### 2025
+#### 2026
 
 **Dalit Intersectionality as Method and Theory: Women’s Narratives from the Margins of Urban Progress** </br> *In Intersectionality beyond Eurocentrism (forthcoming)* </br>
 <a href="https://research.tuni.fi/inrenet/"> Link Here </a> <details>
@@ -16,11 +16,14 @@ link-external-newwindow: true
 ## Peer-reviewed Articles
 
 #### 2026
-
+</details>
 **Dreams Deferred: Navigating Urban Aspiration and Vulnerability among Informal Laborers in Hyderabad** </br> *Anthropology of Work Review (Under Review)* </br>  <details>
 <summary>Abstract</summary> 
 
-####2025
+
+
+#### 2025
+</details>
 **Ethnography in Crisis - Fieldwork, Care, and Survival in Tumultuous Times** </br> *Journal for the Anthropology of North America (JANA)* </br> <a 
 href="https://www.homefieldanthro.org/kitchen-floor-ethnography-knowledge-from-the-margins/"> Link Here </a> <details>
 <summary>Abstract</summary>
