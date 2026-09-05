@@ -33,7 +33,7 @@ link-external-newwindow: true
 
   <figure class="story-tile story-tile--bare">
     <span class="story-tile__frame">
-      <img src="mah8.JPG" alt="Three women in bright pink and teal saris standing together outside a home with woven bamboo walls" loading="lazy">
+      <img src="mah8.jpg" alt="Three women in bright pink and teal saris standing together outside a home with woven bamboo walls" loading="lazy">
     </span>
   </figure>
 

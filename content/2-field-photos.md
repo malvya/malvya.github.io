@@ -60,14 +60,16 @@ TO ADD A NEW PHOTO
   2. Copy any three-line block below and paste it at the bottom.
   3. Change the file name, and fill in the Label and Description if you want them.
 
-Type the file name exactly as it appears in the field folder, capital letters
-included — mah8.JPG is not the same as mah8.jpg.
+Type the file name exactly as it appears in the field folder. All your photo
+files now end in lowercase .jpg, so keep new ones lowercase too — the web
+server treats Mah8.JPG and mah8.jpg as two different files even though your
+Mac does not.
 
 ## Photo: mah1.jpg
 Label:
 Description:
 
-## Photo: mah8.JPG
+## Photo: mah8.jpg
 Label:
 Description:
 

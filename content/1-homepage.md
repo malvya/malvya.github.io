@@ -11,7 +11,7 @@ When you are done, open Claude Code in this folder and type:  /update-website
  THE BIG PHOTO AT THE TOP
 ═══════════════════════════════════════════════════════════════
 
-Photo: field/mah8.JPG
+Photo: field/mah8.jpg
 
 Name shown on the photo: Malvya Chintakindi
 

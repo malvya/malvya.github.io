@@ -11,7 +11,7 @@ execute:
 
 ```{=html}
 <div class="story-hero story-hero--tall" style="--hero-focus: center 18%;">
-  <img src="field/mah8.JPG" alt="Three women in bright pink and teal saris standing together outside a home with woven bamboo walls">
+  <img src="field/mah8.jpg" alt="Three women in bright pink and teal saris standing together outside a home with woven bamboo walls">
   <div class="story-hero__veil"></div>
   <div class="story-hero__text">
     <h1>Malvya Chintakindi</h1>
@@ -50,7 +50,7 @@ execute:
     <p>
       Hi! I am Malvya, a Visiting Assistant Professor in the
       <a href="https://chss.wwu.edu/anthropology">Department of Anthropology</a> at
-      <a href="https://www.wwu.edu">Western Washington University</a>. I completed my PhD in Cultural 
+      <a href="https://www.wwu.edu">Western Washington University</a>. I completed my PhD in
       Anthropology at the <a href="https://www.uoregon.edu">University of Oregon</a> (UO)
       in July 2026. I am from Hyderabad, a metropolitan city and a major IT and
       biotechnology hub in Southern India, Telangana state, India.
@@ -89,7 +89,7 @@ execute:
 Joined the [Department of Anthropology](https://chss.wwu.edu/anthropology) at Western Washington University as a Visiting Assistant Professor.
 
 [Jul 2026]{.news-date}
-Completed my PhD in Cultural Anthropology at the University of Oregon.
+Completed my PhD in Anthropology at the University of Oregon.
 
 [2026]{.news-date}
 Book chapter — "Dalit Intersectionality as Method and Theory: Women's Narratives from the Margins of Urban Progress," forthcoming in *Intersectionality beyond Eurocentrism*.

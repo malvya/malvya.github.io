@@ -81,10 +81,11 @@ blank and the photo stays plain. You can caption some photos and not others.
 
 ## Things worth knowing
 
-**Photo file names are fussy about capital letters.** `field1.JPG` and
-`field1.jpg` are different names as far as the website is concerned, even though
-your Mac treats them as the same. Type the name exactly as it appears in the
-`field` folder. Claude checks this for you before publishing.
+**Photo file names are fussy about capital letters.** `Photo.JPG` and
+`photo.jpg` are different names as far as the website is concerned, even though
+your Mac treats them as the same. This broke two images on the live site once
+already. Every photo is now named in lowercase — keep new ones lowercase too,
+and Claude will check before you publish.
 
 **Changes take a minute or two to appear** on the live site after you publish.
 If you do not see them, wait a moment and refresh.
