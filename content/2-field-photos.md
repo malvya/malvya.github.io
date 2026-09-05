@@ -65,7 +65,7 @@ files now end in lowercase .jpg, so keep new ones lowercase too — the web
 server treats Mah8.JPG and mah8.jpg as two different files even though your
 Mac does not.
 
-## Photo: mah1.jpg
+## Photo: mah01.jpg
 Label:
 Description:
 

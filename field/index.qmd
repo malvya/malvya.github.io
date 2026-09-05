@@ -27,7 +27,7 @@ link-external-newwindow: true
 
   <figure class="story-tile story-tile--bare">
     <span class="story-tile__frame">
-      <img src="mah1.jpg" alt="Carved wooden ornaments hung with small bells beside a bundle of reeds tied with coloured thread, on a mud floor" loading="lazy">
+      <img src="mah01.jpg" alt="Carved wooden ornaments hung with small bells beside a bundle of reeds tied with coloured thread, on a mud floor" loading="lazy">
     </span>
   </figure>
 

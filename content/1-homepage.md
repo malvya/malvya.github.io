@@ -33,7 +33,7 @@ Right button goes to: dissertation
  ABOUT YOU  —  photo on the left, writing on the right
 ═══════════════════════════════════════════════════════════════
 
-Portrait photo: assets/img/malvya.jpg
+Portrait photo: assets/img/malvya-portrait.jpg
 
 Which part of the portrait to show: center 38%
     The portrait is shown as a square, so some of it is trimmed. Smaller

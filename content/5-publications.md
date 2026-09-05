@@ -21,7 +21,7 @@ When you are done, open Claude Code in this folder and type:  /update-website
  THE BIG PHOTO AT THE TOP
 ═══════════════════════════════════════════════════════════════
 
-Photo: field/mah1.jpg
+Photo: field/mah01.jpg
 Title: Publications
 
 Which part of the photo to show: center 50%

@@ -11,7 +11,7 @@ link-external-newwindow: true
 
 ```{=html}
 <div class="story-hero story-hero--short">
-  <img src="../field/mah1.jpg" alt="Carved wooden ornaments hung with small bells beside a bundle of reeds tied with coloured thread, on a mud floor">
+  <img src="../field/mah01.jpg" alt="Carved wooden ornaments hung with small bells beside a bundle of reeds tied with coloured thread, on a mud floor">
   <div class="story-hero__veil"></div>
   <div class="story-hero__text">
     <h1>Publications</h1>
