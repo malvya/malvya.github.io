@@ -1,34 +1,115 @@
 ---
-title: "Photos from the Field"
-toc: true 
+title: ""
+pagetitle: "Malvya Chintakindi | Photos from the Field"
+toc: false
+anchor-sections: false
 link-external-newwindow: true
 ---
-::: {layout-ncol="2"}
-![](mah1.jpg)
-![](mah8.jpg)
-:::
-::: {layout-ncol="3"}
-![](mah11.jpg)
 
-![](mah2.jpg)
+::: {.column-screen}
 
-![](mah3.jpg)
-
-![](mah12.jpg)
-
-![](mah13.jpg)
-![](mah14.jpg)
-
-![](mah16.jpg)
-![](mah17.jpg)
-![](mah18.jpg)
-![](mah19.jpg)
-![](mah4.jpg)
-
-
-![](mah9.jpg)
-
-![](mah11.jpg)
+```{=html}
+<div class="story-hero story-hero--short">
+  <img src="mah19.jpg" alt="Men in white kurtas and turbans playing drums beneath rows of coloured bunting">
+  <div class="story-hero__veil"></div>
+  <div class="story-hero__text">
+    <h1>Photos from the Field</h1>
+  </div>
+</div>
+```
 
 :::
 
+::: {.column-screen-inset}
+
+```{=html}
+<div class="story-grid">
+
+  <figure class="story-tile story-tile--bare">
+    <span class="story-tile__frame">
+      <img src="mah1.jpg" alt="Carved wooden ornaments hung with small bells beside a bundle of reeds tied with coloured thread, on a mud floor" loading="lazy">
+    </span>
+  </figure>
+
+  <figure class="story-tile story-tile--bare">
+    <span class="story-tile__frame">
+      <img src="mah8.JPG" alt="Three women in bright pink and teal saris standing together outside a home with woven bamboo walls" loading="lazy">
+    </span>
+  </figure>
+
+  <figure class="story-tile story-tile--bare">
+    <span class="story-tile__frame">
+      <img src="mah11.jpg" alt="A pink anganwadi building painted with Devanagari signage and illustrated health and nutrition guidance" loading="lazy">
+    </span>
+  </figure>
+
+  <figure class="story-tile story-tile--bare">
+    <span class="story-tile__frame">
+      <img src="mah2.jpg" alt="View from a hilltop across forested hills and terraced fields into a hazy valley" loading="lazy">
+    </span>
+  </figure>
+
+  <figure class="story-tile story-tile--bare">
+    <span class="story-tile__frame">
+      <img src="mah3.jpg" alt="A village house with yellow walls and a tiled roof, beside a stack of bricks and a woven bamboo fence" loading="lazy">
+    </span>
+  </figure>
+
+  <figure class="story-tile story-tile--bare">
+    <span class="story-tile__frame">
+      <img src="mah12.jpg" alt="A yellow anganwadi building with a painted mural of schoolchildren, a man standing outside" loading="lazy">
+    </span>
+  </figure>
+
+  <figure class="story-tile story-tile--bare">
+    <span class="story-tile__frame">
+      <img src="mah13.jpg" alt="A house with woven bamboo walls and a blue metal door painted with figures of deities, chickens in the yard" loading="lazy">
+    </span>
+  </figure>
+
+  <figure class="story-tile story-tile--bare">
+    <span class="story-tile__frame">
+      <img src="mah14.jpg" alt="Two women in orange and pink saris seated together indoors, smiling" loading="lazy">
+    </span>
+  </figure>
+
+  <figure class="story-tile story-tile--bare">
+    <span class="story-tile__frame">
+      <img src="mah16.jpg" alt="Inside a bamboo-walled home, people seated on a mat beside an open doorway with cooking vessels" loading="lazy">
+    </span>
+  </figure>
+
+  <figure class="story-tile story-tile--bare">
+    <span class="story-tile__frame">
+      <img src="mah17.jpg" alt="A village lane of dirt and stone with a tree, woven bamboo walls and overhead power lines" loading="lazy">
+    </span>
+  </figure>
+
+  <figure class="story-tile story-tile--bare">
+    <span class="story-tile__frame">
+      <img src="mah18.jpg" alt="A village street lined with tiled roofs and woven bamboo panels, laundry drying in the sun" loading="lazy">
+    </span>
+  </figure>
+
+  <figure class="story-tile story-tile--bare">
+    <span class="story-tile__frame">
+      <img src="mah19.jpg" alt="Men in white kurtas and turbans playing drums beneath rows of coloured bunting" loading="lazy">
+    </span>
+  </figure>
+
+  <figure class="story-tile story-tile--bare">
+    <span class="story-tile__frame">
+      <img src="mah4.jpg" alt="Two women and a child in school uniform beside a woven bamboo wall" loading="lazy">
+    </span>
+  </figure>
+
+  <figure class="story-tile story-tile--bare">
+    <span class="story-tile__frame">
+      <img src="mah9.jpg" alt="A building signed in Hindi and English as Human Hospital, Indian Veterinary Research Institute" loading="lazy">
+    </span>
+  </figure>
+
+</div>
+```
+
+:::

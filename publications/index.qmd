@@ -1,105 +1,146 @@
 ---
 title: ""
-toc: true 
+pagetitle: "Malvya Chintakindi | Publications"
+toc: true
+toc-location: right
+anchor-sections: false
 link-external-newwindow: true
 ---
+
+::: {.column-screen}
+
+```{=html}
+<div class="story-hero story-hero--short">
+  <img src="../field/mah1.jpg" alt="Carved wooden ornaments hung with small bells beside a bundle of reeds tied with coloured thread, on a mud floor">
+  <div class="story-hero__veil"></div>
+  <div class="story-hero__text">
+    <h1>Publications</h1>
+  </div>
+</div>
+```
+
+:::
+
+::: {.prose}
+
 ## Book Chapters
 
-#### 2026
+```{=html}
+<div class="pub-year-badge">2026</div>
+```
 
-**Dalit Intersectionality as Method and Theory: Women’s Narratives from the Margins of Urban Progress** </br> *In Intersectionality beyond Eurocentrism (forthcoming)* </br>
-<a href="https://research.tuni.fi/inrenet/"> Link Here </a> <details>
-<summary>Abstract</summary> 
-
-</details>
+**Dalit Intersectionality as Method and Theory: Women's Narratives from the Margins of Urban Progress** <br/>
+*In Intersectionality beyond Eurocentrism (forthcoming)* <br/>
+<a href="https://research.tuni.fi/inrenet/">Link Here</a>
 
 ## Peer-reviewed Articles
 
-#### 2026
-</details>
-**Dreams Deferred: Navigating Urban Aspiration and Vulnerability among Informal Laborers in Hyderabad** </br> *Anthropology of Work Review (Under Review)* </br>  <details>
-<summary>Abstract</summary> 
+```{=html}
+<div class="pub-year-badge">2026</div>
+```
 
+**Dreams Deferred: Navigating Urban Aspiration and Vulnerability among Informal Laborers in Hyderabad** <br/>
+*Anthropology of Work Review (Under Review)*
 
+```{=html}
+<div class="pub-year-badge">2025</div>
+```
 
-#### 2025
-</details>
-**Ethnography in Crisis - Fieldwork, Care, and Survival in Tumultuous Times** </br> *Journal for the Anthropology of North America (JANA)* </br> <a 
-href="https://www.homefieldanthro.org/kitchen-floor-ethnography-knowledge-from-the-margins/"> Link Here </a> <details>
-<summary>Abstract</summary>
+**Ethnography in Crisis - Fieldwork, Care, and Survival in Tumultuous Times** <br/>
+*Journal for the Anthropology of North America (JANA)* <br/>
+<a href="https://www.homefieldanthro.org/kitchen-floor-ethnography-knowledge-from-the-margins/">Link Here</a>
 
+```{=html}
+<div class="pub-year-badge">2023</div>
+```
 
-#### 2023
+**Informal Labor Blues: Gendered Effects of COVID-19 and Beyond on Women Belonging to Backward Castes in Hyderabad, India** <br/>
+*Journal of the Indian Anthropological Society* <br/>
+<a href="https://www.waunet.org/wcaa/archive/downloads/wcaa/dejalu/dejalu11-2/Journal-of-the-Indian-Anthropologica-Society.pdf">Link Here</a>
 
-</details>
+**Informal Labor Blues: Effects of COVID-19 on Dalit Caste Women in Hyderabad** <br/>
+*Interdisciplinary Knowledge Series, Women's Studies Unit, Bhairab Ganguly College, New Delhi Publishers*
 
-**Informal Labor Blues: Gendered Effects of COVID-19 and Beyond on Women Belonging to Backward Castes in Hyderabad, India** </br> *Journal of the Indian Anthropological Society* </br> <a href="https://www.waunet.org/wcaa/archive/downloads/wcaa/dejalu/dejalu11-2/Journal-of-the-Indian-Anthropologica-Society.pdf"> Link Here </a> <details>
-<summary>Abstract</summary>
+```{=html}
+<div class="pub-year-badge">2019</div>
+```
 
+**Gender transformative approach to societal empowerment** <br/>
+*Indian Journal of Women and Social Change* <br/>
+<a href="https://doi.org/10.1177/2455632719836805">Link Here</a>
 
-</details> 
-
-**Informal Labor Blues: Effects of COVID-19 on Dalit Caste Women in Hyderabad** </br> *Interdisciplinary Knowledge Series, Women’s Studies Unit, Bhairab Ganguly College, New Delhi Publishers*
-<details>
-<summary>Abstract</summary>
-
-</details>
-
-#### 2019
-
-**Gender transformative approach to societal empowerment** </br> *Indian Journal of Women and Social Change* </br> <a href="https://doi.org/10.1177/2455632719836805"> Link Here </a> <details>
-<summary>Abstract</summary>
-
-</details>
-
-**Re-examining WASH Outcomes for Behaviour Change and Development: Case of two Districts in Bihar** </br> *Indian Association of Social Science Institutions (IASSI) Quarterly-Contributions to Indian Social Science*
+**Re-examining WASH Outcomes for Behaviour Change and Development: Case of two Districts in Bihar** <br/>
+*Indian Association of Social Science Institutions (IASSI) Quarterly-Contributions to Indian Social Science* <br/>
 with Saurabh Sood
 
 ## Research Essays, Op-Eds and Reports
 
-#### 2025
+```{=html}
+<div class="pub-year-badge">2025</div>
+```
 
-**Dreams Deferred: Navigating Aspiration and Constraint in Urban India's Margins** </br> *Center for the Study of Women in Society (CSWS) Annual Review , University of Oregon*
+**Dreams Deferred: Navigating Aspiration and Constraint in Urban India's Margins** <br/>
+*Center for the Study of Women in Society (CSWS) Annual Review, University of Oregon*
 
-#### 2022
+```{=html}
+<div class="pub-year-badge">2022</div>
+```
 
-**Informal Labor Blues: Gendered Effects of COVID-19 and Beyond on Backward Caste Women in India** </br> *Center for the Study of Women in Society (CSWS) Annual Review , University of Oregon*
+**Informal Labor Blues: Gendered Effects of COVID-19 and Beyond on Backward Caste Women in India** <br/>
+*Center for the Study of Women in Society (CSWS) Annual Review, University of Oregon*
 
-**Let them Eat Cake: Narrative Around Food Amidst the Pandemic among Backward Communities in India** </br> *The Village Square Journal* with Prapti Adhikari
+**Let them Eat Cake: Narrative Around Food Amidst the Pandemic among Backward Communities in India** <br/>
+*The Village Square Journal* with Prapti Adhikari
 
-#### 2020
-**3ie's Agricultural Innovation Evidence Programme: summary from our learning workshops** </br> *International Initiative for Impact Evaluation* with Mark Engelbert and Deeksha Ahuja </br> <a
-href="https://www.3ieimpact.org/sites/default/files/2020-09/TW4-Workshops-report.pdf"> Link Here </a>
+```{=html}
+<div class="pub-year-badge">2020</div>
+```
 
-#### 2019
+**3ie's Agricultural Innovation Evidence Programme: summary from our learning workshops** <br/>
+*International Initiative for Impact Evaluation* with Mark Engelbert and Deeksha Ahuja <br/>
+<a href="https://www.3ieimpact.org/sites/default/files/2020-09/TW4-Workshops-report.pdf">Link Here</a>
 
-**Nourishing Hard to Reach Communities** </br> *Vihara Innovation Network for Reckitt Benckiser* with Gayathri Sreedharan, Divya Datta, Neha Jain </br> <a
-href="https://reacheachchild.com/pdf/Tribal%20Ethnography-Amravati%20&%20Nandurbar-%20Nutrition%20India%20Programme.pdf"> Link Here </a>
+```{=html}
+<div class="pub-year-badge">2019</div>
+```
 
-**Change through Communities: Lessons from District Bureaucrats** </br> *Sehgal Foundation Newsletter*  </br> <a
-href="https://www.smsfoundation.org/wp-content/uploads/2020/07/Change-Through-Communities.pdf"> Link Here </a>
+**Nourishing Hard to Reach Communities** <br/>
+*Vihara Innovation Network for Reckitt Benckiser* with Gayathri Sreedharan, Divya Datta, Neha Jain <br/>
+<a href="https://reacheachchild.com/pdf/Tribal%20Ethnography-Amravati%20&%20Nandurbar-%20Nutrition%20India%20Programme.pdf">Link Here</a>
 
-#### 2018
+**Change through Communities: Lessons from District Bureaucrats** <br/>
+*Sehgal Foundation Newsletter* <br/>
+<a href="https://www.smsfoundation.org/wp-content/uploads/2020/07/Change-Through-Communities.pdf">Link Here</a>
 
-**Positive Deviance and Appreciative Inquiry: The story of slowly transforming Sadai** </br> *The Village Square Journal* </br> <a
-href="https://www.smsfoundation.org/news/positive-deviance-and-appreciative-inquiry-the-story-of-slowly-transforming-sadai-the-village-square/"> Link Here </a>
+```{=html}
+<div class="pub-year-badge">2018</div>
+```
 
-**Do governance and development go hand in hand** </br> *New Delhi Times*
-with Saurabh Sood </br> <a
-href="https://www.newdelhitimes.com/do-governance-and-development-go-hand-in-hand/"> Link Here </a>
+**Positive Deviance and Appreciative Inquiry: The story of slowly transforming Sadai** <br/>
+*The Village Square Journal* <br/>
+<a href="https://www.smsfoundation.org/news/positive-deviance-and-appreciative-inquiry-the-story-of-slowly-transforming-sadai-the-village-square/">Link Here</a>
 
-**Measuring happiness and sustainable development in India** </br> *SDG Philanthropy Platform*
-with Saurabh Sood
+**Do governance and development go hand in hand** <br/>
+*New Delhi Times* with Saurabh Sood <br/>
+<a href="https://www.newdelhitimes.com/do-governance-and-development-go-hand-in-hand/">Link Here</a>
 
-#### 2017
+**Measuring happiness and sustainable development in India** <br/>
+*SDG Philanthropy Platform* with Saurabh Sood
 
-**Rapid Assessment of the Phasing Out of Hazardous Pesticides in Dhoraji, Gujarat** </br> *Better Cotton Initiative*
-with Prerna Mukharya, Paramjeet Chawla </br> <a
-href="https://bettercotton.org/documents/rapid-assessment-of-phasing-out-a-hazardous-pesticide-in-dhoraji-gujarat-by-outline-india/"> Link Here </a>
+```{=html}
+<div class="pub-year-badge">2017</div>
+```
 
+**Rapid Assessment of the Phasing Out of Hazardous Pesticides in Dhoraji, Gujarat** <br/>
+*Better Cotton Initiative* with Prerna Mukharya, Paramjeet Chawla <br/>
+<a href="https://bettercotton.org/documents/rapid-assessment-of-phasing-out-a-hazardous-pesticide-in-dhoraji-gujarat-by-outline-india/">Link Here</a>
 
 ## Work in progress
 
-**Navigating Margins: Gender, Identity, and Developmental Discourse among Ethnic Minorities** </br> *with* [Sayak Khatua](https://sayakkhatua.github.io)
+**Navigating Margins: Gender, Identity, and Developmental Discourse among Ethnic Minorities** <br/>
+*with* [Sayak Khatua](https://sayakkhatua.github.io)
 
-**Threads of Survival: Kinship, Gender, and Intersectional Dynamics in Urban Slums** </br> *with* [Sayak Khatua](https://sayakkhatua.github.io)
+**Threads of Survival: Kinship, Gender, and Intersectional Dynamics in Urban Slums** <br/>
+*with* [Sayak Khatua](https://sayakkhatua.github.io)
+
+:::

@@ -1,27 +1,150 @@
 ---
 title: ""
-toc: true 
+pagetitle: "Malvya Chintakindi | Teaching"
+toc: true
+toc-location: right
+anchor-sections: false
 link-external-newwindow: true
 ---
 
-## University of Oregon (Instructor/Graduate Teaching Fellow)
-ANTH 220-Introduction to Nutritional Anthropology (Winter 2025) </br>
-ANTH 165-Sexuality and Culture (Summer 2023) </br>
-ANTH 114-Pirates and Piracy (Fall 2021) </br>
-ANTH 331-Cultures India and South Asia (Winter 2022) </br>
-ANTH 165-Sexuality and Culture (Spring
-2022, Spring 2023, Fall 2024) </br>
-ANTH 161-Introduction to Cultural Anthropology (Fall
-2023) </br>
-ANTH 220-Introduction to Nutritional Anthropology (Winter 2023) </br>
-ANTH 110-Introduction to Traditional Ecological Knowledge (Fall 2023) </br>
-ANTH 332-Human Attraction and Mating Strategies (Winter 2024) </br>
-ANTH 114-Pirates and Piracy (Summer
-2024) </br>
-ANTH 165-Sexuality and Culture (Fall 2024) 
+::: {.column-screen}
 
-## Sehgal Foundation (Capacity Building Sessions)
-Qualitative Tool Development (Summer 2018) </br>
-Community-based Participatory Methodologies (Winter 2018) </br>
-Using PRA (participatory rural appraisal) techniques in extension research and hands-on exercise (Summer 2019)
+```{=html}
+<div class="story-hero story-hero--short">
+  <img src="../field/mah12.jpg" alt="A yellow anganwadi building with a painted mural of schoolchildren, a man standing outside">
+  <div class="story-hero__veil"></div>
+  <div class="story-hero__text">
+    <h1>Teaching</h1>
+  </div>
+</div>
+```
 
+:::
+
+::: {.column-screen-inset}
+
+```{=html}
+<section style="max-width: min(62rem, 100%); margin: 0 auto 1rem;">
+  <h2>Western Washington University</h2>
+</section>
+
+<div class="thread-grid" style="max-width: min(62rem, 100%); margin: 1.5rem auto 3rem;">
+
+  <div class="thread-card">
+    <span class="thread-card__num">ANTH 301</span>
+    <h3>Anthropological Theory</h3>
+    <p class="thread-card__when">Fall 2026</p>
+    <p class="thread-card__desc">The development of anthropological thought from the late 1800s to the present. Emphasis is placed on the major theoretical developments in the discipline.</p>
+  </div>
+
+  <div class="thread-card">
+    <span class="thread-card__num">ANTH 362</span>
+    <h3>Anthropological Perspectives on Asia</h3>
+    <p class="thread-card__when">Fall 2026</p>
+    <p class="thread-card__desc">Ethnographic survey of the region, with attention to the diversity of human experience.</p>
+  </div>
+
+</div>
+
+<section style="max-width: min(62rem, 100%); margin: 0 auto 1rem;">
+  <h2>University of Oregon (Instructor/Graduate Teaching Fellow)</h2>
+</section>
+
+<div class="thread-grid" style="max-width: min(62rem, 100%); margin: 1.5rem auto 3rem;">
+
+  <div class="thread-card">
+    <span class="thread-card__num">ANTH 220</span>
+    <h3>Introduction to Nutritional Anthropology</h3>
+    <p class="thread-card__when">Winter 2025</p>
+  </div>
+
+  <div class="thread-card">
+    <span class="thread-card__num">ANTH 165</span>
+    <h3>Sexuality and Culture</h3>
+    <p class="thread-card__when">Summer 2023</p>
+  </div>
+
+  <div class="thread-card">
+    <span class="thread-card__num">ANTH 114</span>
+    <h3>Pirates and Piracy</h3>
+    <p class="thread-card__when">Fall 2021</p>
+  </div>
+
+  <div class="thread-card">
+    <span class="thread-card__num">ANTH 331</span>
+    <h3>Cultures India and South Asia</h3>
+    <p class="thread-card__when">Winter 2022</p>
+  </div>
+
+  <div class="thread-card">
+    <span class="thread-card__num">ANTH 165</span>
+    <h3>Sexuality and Culture</h3>
+    <p class="thread-card__when">Spring 2022, Spring 2023, Fall 2024</p>
+  </div>
+
+  <div class="thread-card">
+    <span class="thread-card__num">ANTH 161</span>
+    <h3>Introduction to Cultural Anthropology</h3>
+    <p class="thread-card__when">Fall 2023</p>
+  </div>
+
+  <div class="thread-card">
+    <span class="thread-card__num">ANTH 220</span>
+    <h3>Introduction to Nutritional Anthropology</h3>
+    <p class="thread-card__when">Winter 2023</p>
+  </div>
+
+  <div class="thread-card">
+    <span class="thread-card__num">ANTH 110</span>
+    <h3>Introduction to Traditional Ecological Knowledge</h3>
+    <p class="thread-card__when">Fall 2023</p>
+  </div>
+
+  <div class="thread-card">
+    <span class="thread-card__num">ANTH 332</span>
+    <h3>Human Attraction and Mating Strategies</h3>
+    <p class="thread-card__when">Winter 2024</p>
+  </div>
+
+  <div class="thread-card">
+    <span class="thread-card__num">ANTH 114</span>
+    <h3>Pirates and Piracy</h3>
+    <p class="thread-card__when">Summer 2024</p>
+  </div>
+
+  <div class="thread-card">
+    <span class="thread-card__num">ANTH 165</span>
+    <h3>Sexuality and Culture</h3>
+    <p class="thread-card__when">Fall 2024</p>
+  </div>
+
+</div>
+
+<section style="max-width: min(62rem, 100%); margin: 0 auto 1rem;">
+  <h2>Sehgal Foundation (Capacity Building Sessions)</h2>
+</section>
+
+<div class="thread-grid" style="max-width: min(62rem, 100%); margin: 1.5rem auto 3.5rem;">
+
+  <div class="thread-card">
+    <span class="thread-card__num">Session</span>
+    <h3>Qualitative Tool Development</h3>
+    <p class="thread-card__when">Summer 2018</p>
+  </div>
+
+  <div class="thread-card">
+    <span class="thread-card__num">Session</span>
+    <h3>Community-based Participatory Methodologies</h3>
+    <p class="thread-card__when">Winter 2018</p>
+  </div>
+
+  <div class="thread-card">
+    <span class="thread-card__num">Session</span>
+    <h3>Using PRA (participatory rural appraisal) techniques in extension research and hands-on exercise</h3>
+    <p class="thread-card__when">Summer 2019</p>
+  </div>
+
+</div>
+```
+
+:::

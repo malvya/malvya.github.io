@@ -1,0 +1,1231 @@
+/*-- scss:defaults --*/
+
+/* ============================================================
+   STORYTELLER THEME
+   Editorial theme for an anthropologist, storyteller, and
+   educator whose work is rooted in fieldwork.
+
+   Palette: Western Washington University brand colours.
+   Principle: photographs are never cropped, and the story is
+   always readable — nothing hides behind an interaction.
+   ============================================================ */
+
+// ── Cool-toned neutrals ──────────────────────────────────────
+$white:    #ffffff !default;
+$ice:      #f6f8fa !default;
+$mist:     #eef1f5 !default;
+$gray-100: #e8ecf0 !default;
+$gray-200: #d5dbe2 !default;
+$gray-300: #bcc5cf !default;
+$gray-400: #98a5b3 !default;
+$gray-500: #667986 !default;   // WWU brand gray
+$gray-600: #506070 !default;
+$gray-700: #3a4550 !default;
+$gray-800: #272e35 !default;
+$gray-900: #1C2023 !default;   // WWU brand black
+$black:    #0d1012 !default;
+
+// ── WWU brand ────────────────────────────────────────────────
+$wwu-dark-blue:   #003F87 !default;
+$wwu-blue:        #007AC8 !default;
+$wwu-blue-light:  #4da3dc !default;
+$wwu-blue-pale:   #e8f2fb !default;
+$wwu-light-green: #BAD80A !default;
+$wwu-dark-green:  #006B3F !default;
+$wwu-yellow:      #FFC61E !default;
+$wwu-red:         #CC2D30 !default;
+
+// ── Semantic ─────────────────────────────────────────────────
+$primary:   $wwu-dark-blue !default;
+$secondary: $wwu-blue !default;
+$accent:    $wwu-light-green !default;
+$success:   $wwu-dark-green !default;
+$info:      $wwu-blue !default;
+$warning:   $wwu-yellow !default;
+$danger:    $wwu-red !default;
+$light:     $ice !default;
+$dark:      $gray-900 !default;
+
+// ── Type ─────────────────────────────────────────────────────
+$font-family-serif: "Playfair Display", "Crimson Text", Georgia, serif !default;
+$font-family-sans:  "Source Sans Pro", "Inter", system-ui, -apple-system, sans-serif !default;
+$font-family-mono:  "JetBrains Mono", "Fira Code", Consolas, monospace !default;
+
+$link-color:            $primary !default;
+$link-decoration:       none !default;
+$link-hover-color:      $wwu-blue !default;
+$link-hover-decoration: none !default;
+
+$footer-bg: $gray-900 !default;
+$footer-fg: $gray-300 !default;
+
+$shadow-xs: 0 1px 2px rgba(13,16,18,0.05) !default;
+$shadow-sm: 0 2px 6px rgba(13,16,18,0.07) !default;
+$shadow-md: 0 6px 16px rgba(13,16,18,0.09) !default;
+$shadow-lg: 0 12px 32px rgba(13,16,18,0.12) !default;
+$shadow-xl: 0 24px 60px rgba(13,16,18,0.16) !default;
+
+$radius-sm: 4px !default;
+$radius-md: 8px !default;
+$radius-lg: 12px !default;
+$radius-xl: 18px !default;
+
+$code-bg: $gray-100 !default;
+$code-color: $gray-800 !default;
+$toc-color: $wwu-blue;
+$toc-font-size: 0.95em;
+$btn-code-copy-color-active: $wwu-yellow !default;
+
+/*-- scss:rules --*/
+
+// ═════════════════════════════════════════════════════════════
+//  1. FOUNDATION
+// ═════════════════════════════════════════════════════════════
+
+html { scroll-behavior: smooth; }
+
+body {
+    font-family: $font-family-sans;
+    color: $gray-800;
+    line-height: 1.75;
+    background: $ice;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-serif;
+    color: $gray-900;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    line-height: 1.22;
+}
+
+h1 { font-size: clamp(2.1rem, 4vw, 2.9rem); margin-bottom: 1.2rem; }
+h2 { font-size: clamp(1.6rem, 2.8vw, 2.1rem); margin-bottom: 1rem; }
+h3 { font-size: 1.4rem; margin-bottom: 0.8rem; }
+h4 { font-size: 1.12rem; margin-bottom: 0.7rem; }
+h5 { font-size: 1rem;    margin-bottom: 0.6rem; }
+
+// Accent rule under section headings (opt out with .no-rule)
+h2:not(.no-rule) {
+    &::after {
+        content: '';
+        display: block;
+        width: 52px;
+        height: 3px;
+        background: linear-gradient(90deg, $wwu-dark-blue, $wwu-blue);
+        margin-top: 0.65rem;
+        border-radius: 2px;
+    }
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+    transition: color 0.25s ease;
+    &:hover, &:focus { color: $link-hover-color; }
+}
+
+::selection { background: rgba($wwu-blue, 0.22); color: $gray-900; }
+
+// Readable measure for body prose
+.prose {
+    max-width: min(44rem, 100%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Safety net: layout containers must never force horizontal scroll,
+// however narrow the Quarto column they land in turns out to be.
+.thread-grid,
+.story-card-grid,
+.story-grid,
+.stat-row,
+.chapter,
+.pull-quote,
+.band > * { max-width: 100%; }
+
+.chapter        { max-width: min(44rem, 100%); }
+.chapter--wide  { max-width: min(60rem, 100%); }
+.pull-quote     { max-width: min(46rem, 100%); }
+
+
+// ═════════════════════════════════════════════════════════════
+//  2. NAVBAR
+// ═════════════════════════════════════════════════════════════
+
+.navbar {
+    background: rgba($white, 0.94) !important;
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-bottom: 1px solid $gray-200;
+    box-shadow: $shadow-xs;
+    padding: 0.6rem 0;
+
+    .navbar-brand {
+        font-family: $font-family-serif;
+        font-weight: 800;
+        font-size: 1.35rem;
+        color: $primary !important;
+        letter-spacing: -0.02em;
+        &:hover { color: $wwu-blue !important; }
+    }
+
+    .nav-link {
+        color: $gray-700 !important;
+        font-weight: 500;
+        font-size: 0.94rem;
+        padding: 0.5rem 0.9rem !important;
+        border-radius: $radius-sm;
+        transition: all 0.25s ease;
+
+        &:hover, &.active {
+            color: $primary !important;
+            background: rgba($primary, 0.06);
+        }
+    }
+
+    .dropdown-menu {
+        border: 1px solid $gray-200;
+        border-radius: $radius-md;
+        box-shadow: $shadow-md;
+        padding: 0.5rem;
+        background: $white;
+
+        .dropdown-item {
+            border-radius: $radius-sm;
+            padding: 0.5rem 1rem;
+            font-size: 0.92rem;
+            &:hover { background: rgba($primary, 0.06); color: $primary; }
+        }
+    }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  3. HERO — full-bleed photograph with overlaid title
+//
+//  <div class="story-hero story-hero--tall">
+//    <img src="…" alt="…">
+//    <div class="story-hero__veil"></div>
+//    <div class="story-hero__text">
+//      <p class="story-hero__eyebrow">…</p>
+//      <h1>…</h1>
+//      <p class="story-hero__standfirst">…</p>
+//    </div>
+//  </div>
+//
+//  Variants: --tall (homepage) · default (section pages) · --short (list pages)
+// ═════════════════════════════════════════════════════════════
+
+.story-hero {
+    position: relative;
+    width: 100%;
+    min-height: 46vh;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    margin-bottom: 3rem;
+    background: $gray-900;
+
+    &--tall  { min-height: 80vh; }
+    &--short { min-height: 34vh; }
+
+    > img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 0;
+
+        // A hero is the one place a photo IS cropped — it has to fill a fixed
+        // band. So which part survives the crop has to be steerable, or tall
+        // portraits lose the faces off the top.
+        //
+        // Set it per page on the .story-hero element:
+        //     <div class="story-hero" style="--hero-focus: center 20%">
+        // Lower percentages keep more of the top of the photograph.
+        object-position: var(--hero-focus, center center);
+    }
+
+    &__veil {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        background: linear-gradient(
+            to top,
+            rgba($black, 0.86) 0%,
+            rgba($black, 0.52) 42%,
+            rgba($black, 0.18) 100%
+        );
+    }
+
+    &__text {
+        position: relative;
+        z-index: 2;
+        padding: clamp(2rem, 5vw, 4.5rem) clamp(1.25rem, 6vw, 5.5rem);
+        max-width: 62rem;
+        color: $white;
+    }
+
+    &__eyebrow {
+        font-family: $font-family-sans;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: 0.76rem;
+        font-weight: 700;
+        color: $wwu-light-green;
+        margin-bottom: 1rem;
+    }
+
+    h1 {
+        color: $white;
+        font-size: clamp(2.3rem, 6vw, 4.4rem);
+        line-height: 1.05;
+        margin-bottom: 1.1rem;
+        text-shadow: 0 2px 30px rgba($black, 0.45);
+        &::after { display: none; }
+    }
+
+    h2 {
+        color: $white;
+        &::after { display: none; }
+    }
+
+    &__standfirst {
+        font-family: $font-family-serif;
+        font-style: italic;
+        font-size: clamp(1.02rem, 2vw, 1.42rem);
+        line-height: 1.55;
+        color: rgba($white, 0.95);
+        max-width: 44rem;
+        margin-bottom: 0;
+    }
+
+    &__actions {
+        margin-top: 1.9rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+    }
+}
+
+// Ghost button for use on dark hero imagery
+.btn-ghost {
+    display: inline-block;
+    padding: 0.65rem 1.6rem;
+    border: 2px solid rgba($white, 0.55);
+    border-radius: 50px;
+    color: $white;
+    font-family: $font-family-sans;
+    font-size: 0.88rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    transition: all 0.25s ease;
+
+    &:hover {
+        background: $white;
+        border-color: $white;
+        color: $gray-900;
+        transform: translateY(-2px);
+    }
+}
+
+.btn-solid {
+    display: inline-block;
+    padding: 0.65rem 1.6rem;
+    border: 2px solid $wwu-light-green;
+    background: $wwu-light-green;
+    border-radius: 50px;
+    color: $gray-900;
+    font-family: $font-family-sans;
+    font-size: 0.88rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    transition: all 0.25s ease;
+
+    &:hover {
+        background: transparent;
+        color: $white;
+        transform: translateY(-2px);
+    }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  4. PHOTO TILES — masonry, never cropped, story always visible
+//
+//  <div class="story-grid">
+//    <figure class="story-tile">
+//      <span class="story-tile__frame">
+//        <img src="…" alt="…" loading="lazy">
+//      </span>
+//      <figcaption class="story-tile__caption">
+//        <span class="story-tile__kicker">Nandurbar, Maharashtra</span>
+//        <p>The story, always readable.</p>
+//      </figcaption>
+//    </figure>
+//  </div>
+//
+//  Density modifiers — match column width to photo resolution:
+//    .story-grid--feature  2 wide columns   (high-res)
+//    .story-grid           3 columns        (default)
+//    .story-grid--dense    4 narrow columns (low-res / small files)
+// ═════════════════════════════════════════════════════════════
+
+.story-grid {
+    columns: 3 300px;
+    column-gap: 1.5rem;
+    margin: 2.5rem 0 3.5rem;
+
+    &--feature { columns: 2 440px; }
+    &--dense   { columns: 4 210px; }
+}
+
+.story-tile {
+    display: block;
+    width: 100%;
+    margin: 0 0 1.5rem;
+    break-inside: avoid;
+    page-break-inside: avoid;
+    -webkit-column-break-inside: avoid;
+
+    background: $white;
+    border: 1px solid $gray-200;
+    border-radius: $radius-lg;
+    overflow: hidden;
+    box-shadow: $shadow-sm;
+    transition: box-shadow 0.35s ease, transform 0.35s ease, border-color 0.35s ease;
+
+    &:hover {
+        box-shadow: $shadow-lg;
+        transform: translateY(-3px);
+        border-color: rgba($wwu-blue, 0.3);
+    }
+
+    // ── the photograph ───────────────────────────────────────
+    &__frame {
+        display: block;
+        overflow: hidden;
+        background: $gray-100;
+    }
+
+    // ★ no-crop guarantee: natural aspect ratio always wins ★
+    &__frame img {
+        display: block;
+        width: 100%;
+        height: auto;          // never force a height
+        object-fit: contain;   // safety net if a height is ever set
+        transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    &:hover &__frame img { transform: scale(1.035); }
+
+    // ── the story, always visible ────────────────────────────
+    &__caption {
+        display: block;
+        padding: 1.15rem 1.25rem 1.3rem;
+        border-top: 3px solid $wwu-light-green;
+    }
+
+    &__kicker {
+        display: block;
+        font-family: $font-family-sans;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        font-size: 0.68rem;
+        font-weight: 700;
+        color: $wwu-blue;
+        margin-bottom: 0.5rem;
+    }
+
+    &__caption p {
+        font-family: $font-family-serif;
+        font-size: 0.95rem;
+        line-height: 1.62;
+        color: $gray-700;
+        margin: 0;
+    }
+
+    // Caption-free variant: photo only
+    &--bare &__caption { display: none; }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  5. CHAPTER — narrative section
+// ═════════════════════════════════════════════════════════════
+
+.chapter {
+    max-width: 44rem;
+    margin: 0 auto 3.5rem;
+
+    &--wide { max-width: 60rem; }
+
+    &__number {
+        font-family: $font-family-sans;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        font-size: 0.74rem;
+        font-weight: 700;
+        color: $wwu-blue;
+        margin-bottom: 0.55rem;
+    }
+
+    &__lede {
+        font-family: $font-family-serif;
+        font-size: clamp(1.1rem, 2vw, 1.35rem);
+        line-height: 1.6;
+        color: $gray-600;
+        font-style: italic;
+        margin-bottom: 1.75rem;
+    }
+
+    p { font-size: 1.02rem; }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  6. PULL QUOTE
+// ═════════════════════════════════════════════════════════════
+
+.pull-quote {
+    position: relative;
+    border: 0;
+    background: none;
+    margin: 3rem auto;
+    max-width: 46rem;
+    padding: 0 0 0 2.6rem;
+
+    &::before {
+        content: '\201C';
+        position: absolute;
+        left: 0;
+        top: -0.9rem;
+        font-family: $font-family-serif;
+        font-size: 4.5rem;
+        line-height: 1;
+        color: rgba($wwu-blue, 0.3);
+    }
+
+    p {
+        font-family: $font-family-serif;
+        font-size: clamp(1.2rem, 2.4vw, 1.6rem);
+        line-height: 1.55;
+        font-style: italic;
+        color: $gray-800;
+        margin-bottom: 1rem;
+    }
+
+    cite {
+        display: block;
+        font-family: $font-family-sans;
+        font-style: normal;
+        font-size: 0.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.13em;
+        color: $wwu-blue;
+    }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  7. FIELD NOTE
+// ═════════════════════════════════════════════════════════════
+
+.field-note {
+    background: $white;
+    border-left: 4px solid $wwu-light-green;
+    border-radius: 0 $radius-md $radius-md 0;
+    padding: 1.4rem 1.6rem;
+    margin: 2.25rem 0;
+    box-shadow: $shadow-sm;
+
+    &__head {
+        font-family: $font-family-sans;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: $wwu-dark-green;
+        margin-bottom: 0.5rem;
+    }
+
+    p:last-child { margin-bottom: 0; }
+
+    p:not(.field-note__head) {
+        font-family: $font-family-serif;
+        font-size: 0.97rem;
+        line-height: 1.7;
+        color: $gray-700;
+    }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  8. SPLIT — portrait beside prose
+//
+//  <div class="split">
+//    <div class="split__media"><img …></div>
+//    <div class="split__body">…</div>
+//  </div>
+// ═════════════════════════════════════════════════════════════
+
+.split {
+    display: grid;
+    // Media column is capped so a small source file is never blown up.
+    grid-template-columns: minmax(0, 210px) minmax(0, 1.9fr);
+    gap: clamp(1.5rem, 4vw, 3.5rem);
+    align-items: center;
+    max-width: min(62rem, 100%);
+    margin: 0 auto 3.5rem;
+
+    &__media img {
+        width: 100%;
+        max-width: 210px;      // portrait source is 200px — do not upscale
+        height: auto;          // uncropped
+        border-radius: 50%;
+        box-shadow: $shadow-lg;
+        border: 5px solid $white;
+    }
+
+    &__body {
+        h2 { margin-top: 0; }
+        p:last-child { margin-bottom: 0; }
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        text-align: left;
+
+        &__media { max-width: 260px; margin: 0 auto; }
+    }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  9. THREAD CARDS — research strands
+// ═════════════════════════════════════════════════════════════
+
+.thread-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin: 2.5rem 0 3rem;
+}
+
+.thread-card {
+    position: relative;
+    background: $white;
+    border: 1px solid $gray-200;
+    border-radius: $radius-lg;
+    padding: 1.9rem 1.75rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, $wwu-dark-blue, $wwu-blue);
+    }
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: $shadow-lg;
+        border-color: rgba($wwu-blue, 0.32);
+    }
+
+    &__num {
+        font-family: $font-family-sans;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: $wwu-blue;
+        display: block;
+        margin-bottom: 0.6rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.65rem;
+        color: $gray-900;
+        &::after { display: none; }
+    }
+
+    p {
+        font-size: 0.95rem;
+        line-height: 1.65;
+        color: $gray-600;
+        margin-bottom: 0;
+    }
+
+    // A card may carry a term and, optionally, a description beneath it.
+    // The term is set smaller and lighter so the description reads as the
+    // body of the card rather than competing with it.
+    //
+    // These are written as `p.thread-card__when` rather than `&__when` on
+    // purpose: the bare class (0,1,0) loses to the `.thread-card p` rule above
+    // (0,1,1), so the styling silently would not apply. Qualifying with the
+    // element raises it to (0,2,1) and it wins.
+    p.thread-card__when {
+        font-size: 0.85rem;
+        line-height: 1.5;
+        color: $gray-500;
+        margin-bottom: 0;
+    }
+
+    p.thread-card__desc {
+        font-size: 0.95rem;
+        line-height: 1.65;
+        color: $gray-700;
+        margin-top: 0.7rem;
+        margin-bottom: 0;
+    }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  10. STORY CARDS — writing, projects
+// ═════════════════════════════════════════════════════════════
+
+.story-card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.6rem;
+    margin: 2.5rem 0;
+}
+
+.story-card {
+    display: flex;
+    flex-direction: column;
+    background: $white;
+    border: 1px solid $gray-200;
+    border-radius: $radius-lg;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: $shadow-lg;
+        border-color: rgba($wwu-blue, 0.35);
+        color: inherit;
+    }
+
+    &__media {
+        overflow: hidden;
+        background: $gray-100;
+
+        img {
+            display: block;
+            width: 100%;
+            height: auto;      // uncropped
+            transition: transform 0.6s ease;
+        }
+    }
+
+    &:hover &__media img { transform: scale(1.04); }
+
+    &__body { padding: 1.5rem; flex: 1; }
+
+    h3 {
+        font-size: 1.16rem;
+        margin: 0.55rem 0 0.5rem;
+        color: $gray-900;
+        &::after { display: none; }
+    }
+
+    p {
+        font-size: 0.93rem;
+        line-height: 1.65;
+        color: $gray-600;
+        margin-bottom: 1rem;
+    }
+
+    &__more {
+        font-family: $font-family-sans;
+        font-size: 0.76rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: $wwu-blue;
+        &::after { content: ' →'; transition: margin-left 0.25s ease; }
+    }
+
+    &:hover &__more::after { margin-left: 0.3rem; }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  11. TAGS · LABELS · DIVIDERS
+// ═════════════════════════════════════════════════════════════
+
+.tag,
+.research-tag {
+    display: inline-block;
+    padding: 0.32rem 0.85rem;
+    background: rgba($wwu-dark-blue, 0.08);
+    color: $wwu-dark-blue;
+    border: 1px solid rgba($wwu-dark-blue, 0.15);
+    border-radius: 50px;
+    font-size: 0.76rem;
+    font-weight: 600;
+    margin: 0.2rem 0.2rem 0.2rem 0;
+    transition: all 0.2s ease;
+    &:hover { background: $wwu-dark-blue; color: $white; transform: translateY(-1px); }
+}
+
+.tag--alt,
+.research-tag-secondary {
+    display: inline-block;
+    padding: 0.32rem 0.85rem;
+    background: rgba($wwu-blue, 0.08);
+    color: $wwu-blue;
+    border: 1px solid rgba($wwu-blue, 0.15);
+    border-radius: 50px;
+    font-size: 0.76rem;
+    font-weight: 600;
+    margin: 0.2rem 0.2rem 0.2rem 0;
+    transition: all 0.2s ease;
+    &:hover { background: $wwu-blue; color: $white; transform: translateY(-1px); }
+}
+
+.section-label {
+    font-family: $font-family-sans;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    font-size: 0.74rem;
+    font-weight: 700;
+    color: $wwu-blue;
+    margin-bottom: 0.5rem;
+}
+
+.section-divider {
+    border: none;
+    height: 1px;
+    background: linear-gradient(90deg, transparent, $gray-300, transparent);
+    margin: 3.5rem 0;
+}
+
+// Full-width tinted band to break up long pages
+.band {
+    background: linear-gradient(135deg, rgba($wwu-dark-blue, 0.045) 0%, rgba($wwu-blue, 0.025) 100%);
+    border-top: 1px solid rgba($wwu-dark-blue, 0.08);
+    border-bottom: 1px solid rgba($wwu-dark-blue, 0.08);
+    padding: clamp(2.5rem, 6vw, 4.5rem) clamp(1.25rem, 5vw, 3rem);
+    margin: 3.5rem 0;
+
+    &--dark {
+        background: linear-gradient(140deg, $wwu-dark-blue 0%, darken($wwu-dark-blue, 9%) 55%, $gray-900 100%);
+        border: 0;
+        color: rgba($white, 0.93);
+
+        h2, h3 { color: $white; &::after { background: $wwu-light-green; } }
+        p  { color: rgba($white, 0.9); }
+        a:not(.btn):not(.btn-ghost):not(.btn-solid) { color: $wwu-light-green; }
+        .section-label { color: $wwu-light-green; }
+    }
+}
+
+.featured-section {
+    background: linear-gradient(135deg, rgba($wwu-dark-blue, 0.04) 0%, rgba($wwu-blue, 0.02) 100%);
+    border-radius: $radius-xl;
+    padding: 2.5rem;
+    margin: 2rem 0;
+    border: 1px solid rgba($wwu-dark-blue, 0.08);
+}
+
+.highlight-card {
+    background: $white;
+    border: 1px solid $gray-200;
+    border-radius: $radius-lg;
+    padding: 1.75rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, $wwu-dark-blue, $wwu-blue);
+    }
+
+    &:hover { transform: translateY(-4px); box-shadow: $shadow-lg; border-color: rgba($primary, 0.2); }
+
+    h3, h4 { color: $primary; font-size: 1.1rem; margin-bottom: 0.7rem; &::after { display: none; } }
+    p { color: $gray-600; font-size: 0.95rem; line-height: 1.65; margin-bottom: 0; }
+}
+
+.stat-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.stat-card {
+    text-align: center;
+    padding: 1.5rem 1rem;
+
+    .stat-number {
+        font-family: $font-family-serif;
+        font-size: clamp(2rem, 4vw, 2.7rem);
+        font-weight: 700;
+        color: $primary;
+        line-height: 1;
+        margin-bottom: 0.45rem;
+    }
+
+    .stat-label {
+        font-size: 0.8rem;
+        color: $gray-500;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        line-height: 1.4;
+    }
+}
+
+.band--dark .stat-card {
+    .stat-number { color: $wwu-light-green; }
+    .stat-label  { color: rgba($white, 0.72); }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  12. PUBLICATIONS · TIMELINE · DETAILS
+// ═════════════════════════════════════════════════════════════
+
+.pub-entry {
+    padding: 1.25rem 0;
+    border-bottom: 1px solid $gray-200;
+    transition: background 0.2s ease;
+    &:last-child { border-bottom: none; }
+    &:hover { background: rgba($primary, 0.02); border-radius: $radius-md; padding-left: 1rem; }
+}
+
+.pub-year-badge {
+    display: inline-block;
+    background: $primary;
+    color: $white;
+    padding: 0.3rem 1rem;
+    border-radius: 50px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 1rem;
+}
+
+.timeline-item {
+    position: relative;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+    border-left: 2px solid $gray-200;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: -6px; top: 0.5rem;
+        width: 10px; height: 10px;
+        border-radius: 50%;
+        background: $primary;
+        border: 2px solid $white;
+        box-shadow: $shadow-xs;
+    }
+
+    &:last-child { border-left-color: transparent; }
+}
+
+details {
+    margin: 1rem 0;
+    border: 1px solid $gray-200;
+    border-radius: $radius-md;
+    overflow: hidden;
+    background: $white;
+    transition: all 0.3s ease;
+
+    &[open] {
+        box-shadow: $shadow-sm;
+        border-color: rgba($primary, 0.2);
+        summary { border-bottom: 1px solid $gray-200; background: rgba($primary, 0.03); }
+    }
+
+    summary {
+        padding: 0.9rem 1.2rem;
+        cursor: pointer;
+        font-weight: 600;
+        color: $primary;
+        font-size: 0.9rem;
+        list-style: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        transition: all 0.25s ease;
+
+        &::-webkit-details-marker { display: none; }
+        &::before { content: '\25B8'; font-size: 0.8rem; transition: transform 0.25s ease; }
+        &:hover { background: rgba($primary, 0.04); }
+    }
+
+    &[open] summary::before { transform: rotate(90deg); }
+
+    > *:not(summary) { padding: 0 1.2rem; }
+    > p, > div { padding: 1rem 1.2rem; color: $gray-700; font-size: 0.95rem; line-height: 1.7; }
+}
+
+blockquote:not(.pull-quote) {
+    border-left: 4px solid $primary;
+    background: rgba($primary, 0.03);
+    padding: 1.25rem 1.75rem;
+    margin: 1.75rem 0;
+    border-radius: 0 $radius-md $radius-md 0;
+    font-style: italic;
+    color: $gray-700;
+    p:last-child { margin-bottom: 0; }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  13. BUTTONS · TABLES · CODE · FIGURES
+// ═════════════════════════════════════════════════════════════
+
+.btn {
+    border-radius: $radius-md;
+    font-weight: 500;
+    font-size: 0.92rem;
+    padding: 0.6rem 1.5rem;
+    border: none;
+    transition: all 0.25s ease;
+
+    &:hover { transform: translateY(-2px); box-shadow: $shadow-md; }
+    &:active { transform: translateY(0); }
+
+    &.btn-primary {
+        background: $primary;
+        color: $white;
+        &:hover { background: darken($primary, 8%); }
+    }
+
+    &.cv-download {
+        background: linear-gradient(135deg, $wwu-blue, $wwu-dark-blue);
+        color: $white;
+        border-radius: 50px;
+        padding: 0.75rem 2rem;
+        font-size: 1rem;
+        font-weight: 600;
+        box-shadow: $shadow-sm;
+
+        &:hover {
+            background: linear-gradient(135deg, $wwu-dark-blue, darken($wwu-dark-blue, 8%));
+            box-shadow: $shadow-lg;
+            transform: translateY(-3px);
+        }
+    }
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.75rem 0;
+    background: $white;
+    border-radius: $radius-md;
+    overflow: hidden;
+    box-shadow: $shadow-sm;
+
+    th {
+        background: $primary;
+        color: $white;
+        padding: 0.85rem 1rem;
+        text-align: left;
+        font-weight: 600;
+        font-size: 0.92rem;
+    }
+
+    td { padding: 0.75rem 1rem; border-bottom: 1px solid $gray-200; font-size: 0.92rem; }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: rgba($primary, 0.03); }
+}
+
+pre {
+    background: $gray-100;
+    border: 1px solid $gray-200;
+    border-radius: $radius-md;
+    padding: 1.25rem 1.5rem;
+    box-shadow: $shadow-xs;
+    overflow-x: auto;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0; top: 0; bottom: 0;
+        width: 3px;
+        background: linear-gradient(180deg, $wwu-dark-blue, $wwu-blue);
+    }
+
+    code { font-family: $font-family-mono; font-size: 0.88rem; background: none; border: none; padding: 0; }
+}
+
+code {
+    background: $gray-100;
+    color: $gray-800;
+    padding: 0.15em 0.4em;
+    border-radius: $radius-sm;
+    font-family: $font-family-mono;
+    font-size: 0.88em;
+    border: 1px solid $gray-200;
+}
+
+// Quarto figures stay uncropped too
+.quarto-figure {
+    margin: 1.5rem 0;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: $radius-lg;
+        box-shadow: $shadow-md;
+        transition: transform 0.4s ease, box-shadow 0.4s ease;
+        &:hover { transform: scale(1.02); box-shadow: $shadow-xl; }
+    }
+
+    figcaption {
+        font-style: italic;
+        color: $gray-500;
+        font-size: 0.88rem;
+        margin-top: 0.5rem;
+        font-family: $font-family-serif;
+    }
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 129%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    border-radius: $radius-lg;
+    box-shadow: $shadow-lg;
+    margin-top: 1.5rem;
+
+    iframe, object, embed {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        border: none;
+    }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  14. FOOTER
+// ═════════════════════════════════════════════════════════════
+
+.nav-footer {
+    background: $footer-bg;
+    color: $footer-fg;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border: 0 !important;
+    min-height: 4em;
+    padding: 2.5rem 0 1.5rem;
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0; left: 0; right: 0;
+        height: 3px;
+        background: linear-gradient(90deg, $wwu-dark-blue, $wwu-blue, $wwu-light-green, $wwu-yellow);
+    }
+
+    a {
+        color: $wwu-blue-light;
+        text-decoration: none;
+        transition: color 0.25s ease;
+        &:hover { color: $white; }
+    }
+
+    .faux-block { display: block; padding-bottom: 0.4em; font-size: 0.88rem; }
+
+    .nav-footer-center {
+        text-align: center;
+        position: inherit;
+        margin-top: 0;
+        font-family: $font-family-serif;
+        font-style: italic;
+        font-size: 0.9rem;
+
+        @media (max-width: map-get($grid-breakpoints, md)) {
+            margin-top: 0.5em;
+            margin-bottom: 1.5em;
+        }
+    }
+
+    .nav-footer-left,
+    .nav-footer-right,
+    .nav-footer-center { text-align: center; width: 100%; min-height: 2em; }
+
+    @media (min-width: map-get($grid-breakpoints, md)) {
+        .nav-footer-left  { text-align: left; }
+        .nav-footer-right { text-align: right; }
+        .nav-footer-left,
+        .nav-footer-right,
+        .nav-footer-center { flex: 1 1 33%; }
+    }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  15. MOTION · SCROLLBAR · PRINT · RESPONSIVE
+// ═════════════════════════════════════════════════════════════
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+#quarto-content { animation: fadeIn 0.4s ease-out; }
+
+@media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+    html { scroll-behavior: auto; }
+}
+
+::-webkit-scrollbar { width: 8px; height: 8px; }
+::-webkit-scrollbar-track { background: $gray-100; }
+::-webkit-scrollbar-thumb {
+    background: $gray-400;
+    border-radius: 4px;
+    &:hover { background: $gray-500; }
+}
+
+@media print {
+    body { background: white !important; color: black !important; }
+    .navbar, .nav-footer { display: none !important; }
+    a { color: black !important; }
+    .story-grid { columns: 2; }
+    .story-hero { min-height: auto; }
+}
+
+@media (max-width: 768px) {
+    .story-hero,
+    .story-hero--tall { min-height: 62vh; }
+    .story-hero--short { min-height: 30vh; }
+
+    .story-grid,
+    .story-grid--feature,
+    .story-grid--dense { columns: 1; }
+
+    .featured-section { padding: 1.5rem; }
+    .pull-quote { padding-left: 1.9rem; }
+}

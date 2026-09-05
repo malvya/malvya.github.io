@@ -1,0 +1,238 @@
+/*-- scss:defaults --*/
+
+/* ============================================================
+   DESI TYPOGRAPHY OVERLAY
+
+   Swaps the site's European type for South Asian typefaces —
+   every one of them designed to set Devanagari and Latin as a
+   matched pair, so English and Hindi sit together without one
+   looking like an afterthought. Telugu is covered too.
+
+   HOW TO TURN THIS ON / OFF
+   In _quarto.yml, under theme:, add or remove the last line:
+
+       theme:
+         - flatly
+         - html/story-styles.scss
+         - html/desi-fonts.scss     <-- this file
+
+   It must come AFTER story-styles.scss. Nothing else changes:
+   the layout, colours, and photo grid are untouched.
+
+   THE FIVE FACES AND WHAT EACH ONE DOES
+   Rozha One ............ the big hero titles. A high-contrast
+                          Didone with a Devanagari companion —
+                          dramatic, editorial, unmistakably Indian.
+   Martel ............... section headings. A sturdy serif with
+                          real bold weights.
+   Tiro Devanagari Hindi  the italic passages. Chosen because it
+                          has a TRUE italic; most Devanagari serifs
+                          do not, and browsers fake it badly.
+   Mukta ................ body text and navigation. Quiet, even,
+                          built for long reading.
+   Kalam ................ the small labels only. Handwritten, warm,
+                          a nod to a field notebook.
+   Noto Serif Telugu .... sits in every stack so Telugu renders
+                          properly rather than as empty boxes.
+   ============================================================ */
+
+// The webfonts. Requested here rather than from _quarto.yml so this overlay is
+// self-contained: nothing is fetched unless the file is actually enabled.
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Martel:wght@300;400;700;800&family=Mukta:wght@300;400;500;600;700&family=Noto+Serif+Telugu:wght@400;600&family=Rozha+One&family=Tiro+Devanagari+Hindi:ital@0;1&display=swap');
+
+// ── Core stacks (these override story-styles.scss) ───────────
+$font-family-serif: "Martel", "Noto Serif Telugu", "Playfair Display", Georgia, serif !default;
+$font-family-sans:  "Mukta", "Noto Serif Telugu", "Source Sans Pro", system-ui, -apple-system, sans-serif !default;
+
+// ── Role-specific stacks used in the rules below ─────────────
+$font-display: "Rozha One", "Martel", "Noto Serif Telugu", Georgia, serif !default;
+$font-italic:  "Tiro Devanagari Hindi", "Noto Serif Telugu", Georgia, serif !default;
+$font-hand:    "Kalam", "Mukta", "Noto Serif Telugu", cursive !default;
+
+/*-- scss:rules --*/
+
+// ═════════════════════════════════════════════════════════════
+//  DISPLAY — Rozha One
+//  Single weight, very high stroke contrast. It needs tighter
+//  tracking and leading than Playfair did, and it must never be
+//  asked for bold: there is only one weight, so `font-weight:
+//  700` would trigger an ugly synthetic bold.
+// ═════════════════════════════════════════════════════════════
+
+.story-hero h1 {
+    font-family: $font-display;
+    font-weight: 400;
+    letter-spacing: 0.005em;
+    line-height: 1.02;
+    // Rozha reads larger than Playfair at the same size — pull it back.
+    font-size: clamp(2.1rem, 5.4vw, 4rem);
+}
+
+.band--dark h2,
+.stat-card .stat-number {
+    font-family: $font-display;
+    font-weight: 400;
+}
+
+.stat-card .stat-number {
+    letter-spacing: 0.01em;
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  HEADINGS — Martel
+//  Has genuine 400/700/800, so hierarchy is real rather than faked.
+//  Martel's x-height is larger than Playfair's, so the same
+//  nominal size looks bigger; sizes are nudged down to compensate.
+// ═════════════════════════════════════════════════════════════
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-serif;
+    font-weight: 800;
+    letter-spacing: -0.005em;
+    line-height: 1.28;
+}
+
+h1 { font-size: clamp(1.95rem, 3.8vw, 2.7rem); }
+h2 { font-size: clamp(1.5rem, 2.6vw, 1.95rem); }
+h3 { font-size: 1.3rem; }
+h4 { font-size: 1.08rem; }
+
+.story-card h3,
+.thread-card h3 { font-weight: 700; }
+
+
+// ═════════════════════════════════════════════════════════════
+//  ITALIC PASSAGES — Tiro Devanagari Hindi
+//  Every place the design leans on italic. Tiro ships a real
+//  italic, which is why it is here instead of Martel.
+// ═════════════════════════════════════════════════════════════
+
+.story-hero__standfirst,
+.chapter__lede,
+.pull-quote p,
+.story-tile__caption p,
+.field-note p:not(.field-note__head),
+.quarto-figure figcaption,
+.nav-footer .nav-footer-center {
+    font-family: $font-italic;
+    font-style: italic;
+}
+
+// Tiro's italic is delicate — give it a little more room to breathe.
+.story-hero__standfirst { line-height: 1.62; }
+.chapter__lede          { line-height: 1.68; }
+.pull-quote p           { line-height: 1.6; }
+.story-tile__caption p  { line-height: 1.68; font-size: 0.96rem; }
+
+.pull-quote::before {
+    font-family: $font-display;
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  BODY — Mukta
+//  Mukta sits optically smaller than Source Sans, so body copy is
+//  nudged up very slightly and given a touch more leading.
+// ═════════════════════════════════════════════════════════════
+
+body {
+    font-family: $font-family-sans;
+    font-size: 1.02rem;
+    line-height: 1.8;
+}
+
+.chapter p        { font-size: 1.05rem; }
+.thread-card p,
+.story-card p     { font-size: 0.97rem; line-height: 1.72; }
+
+.navbar .nav-link { font-family: $font-family-sans; font-weight: 600; }
+
+.navbar .navbar-brand {
+    font-family: $font-display;
+    font-weight: 400;
+    font-size: 1.5rem;
+    letter-spacing: 0.01em;
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  SMALL LABELS — Kalam
+//  Handwritten, used only at small sizes and short lengths.
+//  Kalam runs small and needs looser tracking to stay legible,
+//  and it is never set in all-caps — handwriting in caps is
+//  hard to read, so these lose the uppercase transform.
+// ═════════════════════════════════════════════════════════════
+
+.section-label,
+.story-tile__kicker,
+.field-note__head,
+.thread-card__num,
+.story-hero__eyebrow {
+    font-family: $font-hand;
+    font-weight: 700;
+    text-transform: none;
+    letter-spacing: 0.06em;
+}
+
+.section-label       { font-size: 0.95rem; }
+.story-tile__kicker  { font-size: 0.9rem; }
+.field-note__head    { font-size: 0.9rem; }
+.thread-card__num    { font-size: 0.88rem; }
+.story-hero__eyebrow { font-size: 0.98rem; letter-spacing: 0.08em; }
+
+// Stat labels stay in Mukta — they are data, not voice.
+.stat-card .stat-label {
+    font-family: $font-family-sans;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  DEVANAGARI / TELUGU IN RUNNING TEXT
+//
+//  Wrap Indic words so they get a face sized to sit beside Latin
+//  rather than towering over it:
+//      <span class="indic">इज़्ज़त</span>
+//      <span class="indic">తెలుగు</span>
+// ═════════════════════════════════════════════════════════════
+
+.indic {
+    font-family: "Tiro Devanagari Hindi", "Noto Serif Telugu", serif;
+    font-style: normal;
+    // Indic scripts have a taller apparent size than Latin at the
+    // same point size; 0.94 brings them back into line.
+    font-size: 0.94em;
+    line-height: 1.9;
+}
+
+.indic--hand { font-family: $font-hand; }
+
+
+// ═════════════════════════════════════════════════════════════
+//  TAGS & BUTTONS
+// ═════════════════════════════════════════════════════════════
+
+.tag, .research-tag,
+.tag--alt, .research-tag-secondary,
+.btn, .btn-ghost, .btn-solid,
+.story-card__more {
+    font-family: $font-family-sans;
+    font-weight: 600;
+}
+
+.btn-solid { font-weight: 700; }
+
+
+// ═════════════════════════════════════════════════════════════
+//  RESPONSIVE
+//  Rozha's high contrast makes its hairlines disappear at small
+//  sizes, so the hero title gets a floor on phones.
+// ═════════════════════════════════════════════════════════════
+
+@media (max-width: 768px) {
+    .story-hero h1 { font-size: clamp(1.9rem, 8vw, 2.5rem); }
+    body { font-size: 1rem; }
+    .section-label, .story-hero__eyebrow { letter-spacing: 0.04em; }
+}

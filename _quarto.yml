@@ -2,63 +2,62 @@
 # website settings
 website:
   title: "MC"
-  favicon: assets/img/turtle.webp
+  # The template's turtle favicon is gone. This is an MC monogram in the WWU
+  # colours — delete the line for no browser-tab icon at all.
+  favicon: assets/img/favicon.png
   site-url: https://malvya.github.io
   repo-url: https://github.com/malvya/malvya.github.io
   page-navigation: true
-  #back-to-top-navigation: true
-  
-  # start of the navigation bar at the top of the website
+  open-graph: true
+  twitter-card:
+    creator: "@MalvyaC"
+
   navbar:
     pinned: true
-    #logo: assets/img/turtle.webp
-    
-    # your sub-pages
+
     right:
       - text: CV
         aria-label: "CV"
         href: "cv/index.qmd"
       - text: Research
         aria-label: "Research"
-        menu: 
-          - href: "dissertation/index.qmd"
-          - href: "pre_phd/index.qmd"
+        menu:
+          - text: "Dissertation Research"
+            href: "dissertation/index.qmd"
+          - text: "Pre-PhD"
+            href: "pre_phd/index.qmd"
       - text: Publications
         aria-label: "Publications"
         href: "publications/index.qmd"
       - text: Teaching
         aria-label: "Teaching"
         href: "teaching/index.qmd"
-    #  - text: Field Work
-    #    aria-label: "Field Work"
-    #    href: "field/index.qmd"
+      - text: Field Work
+        aria-label: "Field Work"
+        href: "field/index.qmd"
 
-
-# Don't touch unless you know what you are doing :) ------------
-  search: 
+  search:
     location: navbar
-#    type: textbox
+
   page-footer:
     border: true
     left: "&#169; 2025 Malvya Chintakindi"
-    # your social media handles
-#   center:
-#      - icon: folder-symlink
-#        href: https://www.marvinschmitt.com/blog/website-tutorial-quarto/
-#     - icon: twitter
-#        href: https://twitter.com/MarvinSchmittML
-#      - icon: linkedin
-#        href: https://www.linkedin.com/in/marvin-schmitt-a85b321a2/
-#      - icon: envelope
-#        aria-label: email
-#        href: "mailto:khatuas@oregonstate.edu" 
     right: "made with [Quarto](https://quarto.org)"
 
 project:
   type: website
   output-dir: docs
 
-  preview: 
+  # Build only the real pages. Malvya's plain-language source files
+  # (content/*.md, START-HERE.md) are inputs, not pages — without this
+  # Quarto publishes them as part of the website. The reference copy of
+  # the deployed site is excluded for the same reason.
+  render:
+    - "*.qmd"
+    - "*/*.qmd"
+    - "!malvya.github.io-current/"
+
+  preview:
     port: 22222
     browser: true
     watch-inputs: true
@@ -69,17 +68,29 @@ execute:
 
 format:
   html:
-    fontsize: 1.2em
-    linestretch: 1.5
-    max-width: 1800px
+    fontsize: 1.1em
+    linestretch: 1.6
+    max-width: 1200px
     page-layout: full
     smooth-scroll: true
-    theme: 
+    theme:
       - flatly
-      - html/styles2.scss
+      - html/story-styles.scss
+      # Playful-but-professional overlay: Fraunces + Space Grotesk, warm paper
+      # ground, hard offset shadows, colour-cycled accents. Delete this line to
+      # go back to the plain Playfair / Source Sans look.
+      - html/field-confetti.scss
+      # Desi typography. Do not enable at the same time as field-confetti —
+      # both set the typefaces and they would fight.
+      #- html/desi-fonts.scss
     toc: false
     code-link: true
     anchor-sections: true
     fig-cap-location: margin
     reference-location: margin
     footnotes-hover: true
+    include-in-header:
+      text: |
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Playfair+Display:wght@400;600;700;800&family=Source+Sans+Pro:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">

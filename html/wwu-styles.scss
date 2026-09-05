@@ -1,51 +1,45 @@
 /*-- scss:defaults --*/
 
 /* ============================================================
-   ACADEMIC JOB MARKET THEME
-   A sophisticated, modern academic portfolio theme
-   Designed for Anthropology PhD — Ethnographic Research
+   WESTERN WASHINGTON UNIVERSITY THEME
+   Brand-aligned academic portfolio theme
+   Based on official WWU color guidelines (marcom.wwu.edu/colors)
    ============================================================ */
 
-// ── Color Foundation ──────────────────────────────────────────
-$white:    #fdfdfd !default;
-$cream:    #faf8f5 !default;
-$paper:    #f6f3ef !default;
-$gray-100: #f0ede8 !default;
-$gray-200: #e4e0d9 !default;
-$gray-300: #d1cdc5 !default;
-$gray-400: #b3aea4 !default;
-$gray-500: #928c82 !default;
-$gray-600: #6e685e !default;
-$gray-700: #504a42 !default;
-$gray-800: #38332c !default;
-$gray-900: #252118 !default;
-$black:    #1a1612 !default;
+// ── Color Foundation (cool-toned grays) ──────────────────────
+$white:    #fdfdfe !default;
+$ice:      #f5f7fa !default;
+$mist:     #eef1f5 !default;
+$gray-100: #e8ecf0 !default;
+$gray-200: #d5dbe2 !default;
+$gray-300: #bcc5cf !default;
+$gray-400: #98a5b3 !default;
+$gray-500: #667986 !default;   // WWU brand gray
+$gray-600: #506070 !default;
+$gray-700: #3a4550 !default;
+$gray-800: #272e35 !default;
+$gray-900: #1C2023 !default;   // WWU brand black
+$black:    #141719 !default;
 
-// ── Academic Palette ──────────────────────────────────────────
-$deep-teal:      #1a6b6a !default;
-$teal:           #2a9d8f !default;
-$teal-light:     #52c4b8 !default;
-$terracotta:     #c4653a !default;
-$terracotta-light: #e07a50 !default;
-$ochre:          #cc8a2e !default;
-$gold:           #d4a843 !default;
-$indigo:         #3d405b !default;
-$burgundy:       #7a3b2e !default;
-$sage:           #6b8f71 !default;
-$forest:         #355e3b !default;
-$coral:          #e76f51 !default;
-$slate:          #264653 !default;
-$lavender:       #8e7cc3 !default;
+// ── WWU Brand Palette ────────────────────────────────────────
+$wwu-dark-blue:   #003F87 !default;
+$wwu-blue:        #007AC8 !default;
+$wwu-blue-light:  #4da3dc !default;
+$wwu-blue-pale:   #e8f2fb !default;
+$wwu-light-green: #BAD80A !default;
+$wwu-dark-green:  #006B3F !default;
+$wwu-yellow:      #FFC61E !default;
+$wwu-red:         #CC2D30 !default;
 
 // ── Semantic Colors ───────────────────────────────────────────
-$primary:    $deep-teal !default;
-$secondary:  $terracotta !default;
-$accent:     $ochre !default;
-$success:    $sage !default;
-$info:       $slate !default;
-$warning:    $gold !default;
-$danger:     $coral !default;
-$light:      $cream !default;
+$primary:    $wwu-dark-blue !default;
+$secondary:  $wwu-blue !default;
+$accent:     $wwu-light-green !default;
+$success:    $wwu-dark-green !default;
+$info:       $wwu-blue !default;
+$warning:    $wwu-yellow !default;
+$danger:     $wwu-red !default;
+$light:      $ice !default;
 $dark:       $gray-900 !default;
 
 // ── Typography ────────────────────────────────────────────────
@@ -56,7 +50,7 @@ $font-family-mono: "JetBrains Mono", "Fira Code", Consolas, monospace !default;
 // ── Links ─────────────────────────────────────────────────────
 $link-color: $primary !default;
 $link-decoration: none !default;
-$link-hover-color: $terracotta !default;
+$link-hover-color: $wwu-blue !default;
 $link-hover-decoration: none !default;
 
 // ── Footer ────────────────────────────────────────────────────
@@ -81,9 +75,9 @@ $code-bg: $gray-100 !default;
 $code-color: $gray-800 !default;
 
 // ── TOC ───────────────────────────────────────────────────────
-$toc-color: $terracotta;
+$toc-color: $wwu-blue;
 $toc-font-size: 0.95em;
-$btn-code-copy-color-active: $ochre !default;
+$btn-code-copy-color-active: $wwu-yellow !default;
 
 /*-- scss:rules --*/
 
@@ -96,7 +90,7 @@ body {
     font-family: $font-family-sans;
     color: $gray-800;
     line-height: 1.75;
-    background: $cream;
+    background: $ice;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -116,14 +110,13 @@ h3 { font-size: 1.4rem; margin-bottom: 0.85rem; }
 h4 { font-size: 1.15rem; margin-bottom: 0.75rem; }
 h5 { font-size: 1rem; margin-bottom: 0.65rem; }
 
-// Subtle accent line under major headings
 h1, h2 {
     &::after {
         content: '';
         display: block;
         width: 50px;
         height: 3px;
-        background: linear-gradient(90deg, $primary, $teal-light);
+        background: linear-gradient(90deg, $wwu-dark-blue, $wwu-blue);
         margin-top: 0.6rem;
         border-radius: 2px;
     }
@@ -159,7 +152,7 @@ a {
         letter-spacing: -0.02em;
 
         &:hover {
-            color: $terracotta !important;
+            color: $wwu-blue !important;
         }
     }
 
@@ -261,7 +254,7 @@ a {
         left: 0;
         right: 0;
         height: 4px;
-        background: linear-gradient(90deg, $primary, $teal-light);
+        background: linear-gradient(90deg, $wwu-dark-blue, $wwu-blue);
         border-radius: $radius-lg $radius-lg 0 0;
     }
 
@@ -309,17 +302,17 @@ a {
 .research-tag-secondary {
     display: inline-block;
     padding: 0.35rem 0.9rem;
-    background: rgba($terracotta, 0.08);
-    color: $terracotta;
+    background: rgba($wwu-blue, 0.08);
+    color: $wwu-blue;
     border-radius: 50px;
     font-size: 0.82rem;
     font-weight: 500;
     margin: 0.2rem;
     transition: all 0.2s ease;
-    border: 1px solid rgba($terracotta, 0.15);
+    border: 1px solid rgba($wwu-blue, 0.15);
 
     &:hover {
-        background: $terracotta;
+        background: $wwu-blue;
         color: $white;
         transform: translateY(-1px);
     }
@@ -479,7 +472,7 @@ pre {
         top: 0;
         bottom: 0;
         width: 3px;
-        background: linear-gradient(180deg, $primary, $teal-light);
+        background: linear-gradient(180deg, $wwu-dark-blue, $wwu-blue);
     }
 
     code {
@@ -589,7 +582,7 @@ table {
     }
 
     &.cv-download {
-        background: linear-gradient(135deg, $primary, $deep-teal);
+        background: linear-gradient(135deg, $wwu-blue, $wwu-dark-blue);
         color: $white;
         border-radius: 50px;
         padding: 0.75rem 2rem;
@@ -598,7 +591,7 @@ table {
         box-shadow: $shadow-sm;
 
         &:hover {
-            background: linear-gradient(135deg, $deep-teal, $slate);
+            background: linear-gradient(135deg, $wwu-dark-blue, darken($wwu-dark-blue, 8%));
             box-shadow: $shadow-lg;
             transform: translateY(-3px);
         }
@@ -623,11 +616,11 @@ table {
         left: 0;
         right: 0;
         height: 3px;
-        background: linear-gradient(90deg, $primary, $teal-light, $terracotta, $ochre);
+        background: linear-gradient(90deg, $wwu-dark-blue, $wwu-blue, $wwu-light-green, $wwu-yellow);
     }
 
     a {
-        color: $teal-light;
+        color: $wwu-blue-light;
         transition: color 0.25s ease;
         text-decoration: none;
         &:hover { color: $white; }
@@ -698,11 +691,11 @@ table {
 
 // ── Featured Section ──────────────────────────────────────────
 .featured-section {
-    background: linear-gradient(135deg, rgba($primary, 0.03) 0%, rgba($teal-light, 0.02) 100%);
+    background: linear-gradient(135deg, rgba($wwu-dark-blue, 0.03) 0%, rgba($wwu-blue, 0.02) 100%);
     border-radius: $radius-xl;
     padding: 2.5rem;
     margin: 2rem 0;
-    border: 1px solid rgba($primary, 0.08);
+    border: 1px solid rgba($wwu-dark-blue, 0.08);
 }
 
 // ── Embed Container ───────────────────────────────────────────

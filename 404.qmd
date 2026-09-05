@@ -1,5 +1,18 @@
 ---
 title: "404"
+pagetitle: "Malvya Chintakindi | 404"
+toc: false
 ---
 
-Page not found, sorry! Try the search or navigate back to the base website.
+```{=html}
+<section class="chapter" style="text-align: center; padding-top: 3rem;">
+  <p style="font-size: 1.1rem;">
+    Page not found, sorry! Try the search or navigate back to the base website.
+  </p>
+  <p style="margin-top: 1.75rem;">
+    <a href="index.qmd" class="btn btn-primary" style="border-radius: 50px; padding: 0.6rem 1.8rem;">
+      &larr; Back to Home
+    </a>
+  </p>
+</section>
+```

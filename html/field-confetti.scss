@@ -1,0 +1,894 @@
+/*-- scss:defaults --*/
+
+// -----------------------------------------------------------------------------
+// Field Confetti — playful manners, Western Washington University colours
+//
+// A sibling to the Oxford Confetti theme on sayakkhatua.github.io: the same
+// typography (Fraunces + Space Grotesk) and the same tactile devices — hard
+// offset shadows, sweeping underlines, colour-cycled accents, a tinted ground
+// instead of clinical white.
+//
+// The palette is WWU's, per marcom.wwu.edu/colors:
+//   Dark Blue   #003F87    Light Blue #007AC8   White #FFFFFF
+//   Light Green #BAD80A (dominant accent)       Dark Green #006B3F
+//   Yellow      #FFC61E    Red        #CC2D30
+//   Black       #1C2023    Gray       #667986
+//
+// WWU's own guidance is that the blues carry the design and accents are ~10%.
+// That happens to be exactly the rule this theme already followed, so it ports
+// cleanly: structure is always dark blue, and colour is only ever allowed in on
+// *accents* — underlines, chips, shadows, ticks, bars. Nothing load-bearing is
+// lime. Small text is never lime or yellow either, because neither has the
+// contrast for it against a light ground.
+//
+// The page ground is a tint of the light blue rather than white. WWU explicitly
+// permits tints of light blue, so this stays on-brand while giving the site the
+// colour it was missing.
+//
+// This is an OVERLAY: it sits on top of html/story-styles.scss and changes how
+// that theme looks, not what it does. The no-crop photo grid, the heroes and
+// every layout rule still come from story-styles.scss.
+//
+// TURN IT OFF by deleting its line from the theme: list in _quarto.yml.
+// Do not run it alongside html/desi-fonts.scss — both set the typefaces.
+// -----------------------------------------------------------------------------
+
+// Type ------------------------------------------------------------------------
+// Fraunces is a serif with genuine wonk to it: it reads academic without
+// reading stuffy, which is the whole brief. Space Grotesk does the working
+// text and UI. The pairing is what carries over from Sayak's site.
+//
+// The webfonts are requested from _quarto.yml (include-in-header) in a single
+// combined request, rather than with an @import here which would block render.
+
+$font-family-serif: "Fraunces", "Iowan Old Style", Georgia, serif !default;
+$font-family-sans:  "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !default;
+$font-family-mono:  "Space Mono", "SF Mono", Menlo, Consolas, monospace !default;
+
+$font-family-sans-serif: $font-family-sans !default;
+$font-family-monospace:  $font-family-mono !default;
+$headings-font-family:   $font-family-serif !default;
+$headings-font-weight:   700 !default;
+$headings-line-height:   1.14 !default;
+
+// The WWU brand ------------------------------------------------------------------
+$ink:        #003F87 !default;   // Dark Blue — the spine
+$ink-mid:    #007AC8 !default;   // Light Blue
+$ink-soft:   #4da3dc !default;   // a tint of light blue
+$ink-pale:   #dbe9f7 !default;   // a deeper tint, for panels
+$lime:       #BAD80A !default;   // Light Green — the dominant accent
+$forest:     #006B3F !default;   // Dark Green
+$gold:       #FFC61E !default;   // Yellow
+$brick:      #CC2D30 !default;   // Red
+
+// Accent tints, for chip and panel fills
+$lime-pale:   #f1f9cf !default;
+$gold-pale:   #fff3d2 !default;
+$brick-pale:  #fadedd !default;
+$blue-pale:   $ink-pale !default;
+
+// Neutrals — pulled toward the blues rather than left neutral grey, so nothing
+// on the page reads as an unrelated colour.
+$white:    #ffffff !default;
+$ice:      #e9f0f8 !default;   // page ground — a tint of light blue, not white
+$mist:     #dfe9f4 !default;
+$gray-100: #dbe5f0 !default;
+$gray-200: #c6d4e4 !default;
+$gray-300: #a8bcd2 !default;
+$gray-400: #8299b2 !default;
+$gray-500: #667986 !default;   // WWU brand Gray
+$gray-600: #4d5f70 !default;
+$gray-700: #35485a !default;
+$gray-800: #24333f !default;
+$gray-900: #1C2023 !default;   // WWU brand Black
+$black:    #12171c !default;
+
+// Semantic --------------------------------------------------------------------------
+$primary:   $ink !default;
+$secondary: $gray-600 !default;
+$success:   $forest !default;
+$info:      $ink-mid !default;
+$warning:   $gold !default;
+$danger:    $brick !default;
+$light:     $gray-100 !default;
+$dark:      $ink !default;
+
+$body-bg:    $ice !default;
+$body-color: $gray-800 !default;
+
+$link-color:       $ink !default;
+$link-hover-color: $ink-mid !default;
+
+$navbar-bg: $ink !default;
+$navbar-fg: $gray-100 !default;
+$navbar-hl: $lime !default;
+
+$footer-bg: $ink !default;
+$footer-fg: $gray-200 !default;
+
+$code-bg:    $ink-pale !default;
+$code-color: $ink !default;
+$toc-color:  $ink !default;
+$btn-code-copy-color-active: $lime !default;
+
+$border-radius:    0.45rem !default;
+$border-radius-lg: 0.75rem !default;
+
+
+/*-- scss:mixins --*/
+
+// The hard offset shadow: present enough to feel tactile, restrained enough
+// not to read as a sticker.
+@mixin hard-shadow($color: $ink, $x: 4px, $y: 4px, $alpha: 0.9) {
+    box-shadow: #{$x} #{$y} 0 0 rgba($color, $alpha);
+}
+
+@mixin lift-press($color: $ink, $x: 4px, $y: 4px) {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    &:hover,
+    &:focus-visible {
+        transform: translate(-2px, -2px);
+        box-shadow: #{$x + 2} #{$y + 2} 0 0 rgba($color, 0.95);
+    }
+}
+
+// An underline that sweeps in from the left rather than simply appearing.
+@mixin sweep-underline($color: $lime, $thickness: 2px) {
+    background-image: linear-gradient($color, $color);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% $thickness;
+    transition: background-size 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus-visible { background-size: 100% $thickness; }
+}
+
+
+/*-- scss:rules --*/
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+// ═════════════════════════════════════════════════════════════
+//  GROUND
+// ═════════════════════════════════════════════════════════════
+
+body {
+    font-family: $font-family-sans;
+    background-color: $ice;
+    color: $gray-800;
+    text-rendering: optimizeLegibility;
+
+    // A faint dot grid. At 5% it reads as texture, not pattern — the page
+    // stops looking blank without ever looking busy.
+    background-image: radial-gradient(rgba($ink, 0.06) 1px, transparent 1px);
+    background-size: 24px 24px;
+}
+
+::selection { background: rgba($lime, 0.55); color: $ink; }
+
+:focus-visible { outline: 3px solid $ink-mid; outline-offset: 2px; }
+
+
+// ═════════════════════════════════════════════════════════════
+//  HEADINGS — a ruled line with a colour-cycling tick
+// ═════════════════════════════════════════════════════════════
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-serif;
+    color: $ink;
+    letter-spacing: -0.02em;
+}
+
+h2:not(.no-rule) {
+    padding-bottom: 0.32em;
+    border-bottom: 1px solid $gray-200;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        top: auto;
+        display: block;
+        width: 2.6rem;
+        height: 4px;
+        margin-top: 0;
+        border-radius: 99px;
+        background: $lime;
+    }
+
+    &:nth-of-type(4n + 2)::after { background: $ink-mid; }
+    &:nth-of-type(4n + 3)::after { background: $gold; }
+    &:nth-of-type(4n + 4)::after { background: $brick; }
+}
+
+h3 { color: $ink-mid; }
+
+
+// ═════════════════════════════════════════════════════════════
+//  LINKS — the sweep
+// ═════════════════════════════════════════════════════════════
+
+main a:not(.btn):not(.nav-link):not(.anchorjs-link):not(.btn-ghost):not(.btn-solid):not(.story-card):not(.tag):not(.tag--alt):not(.research-tag):not(.research-tag-secondary) {
+    color: $link-color;
+    font-weight: 600;
+    @include sweep-underline($lime, 2px);
+
+    &:hover, &:focus-visible { color: $link-hover-color; }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  NAVBAR — solid dark blue, lime rule, per-item cycling underline
+// ═════════════════════════════════════════════════════════════
+
+.navbar {
+    background: $ink !important;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    border-bottom: 3px solid $lime;
+    box-shadow: 0 2px 10px rgba($ink, 0.22);
+
+    .navbar-brand {
+        font-family: $font-family-serif;
+        color: $white !important;
+        &:hover { color: $lime !important; }
+    }
+
+    .nav-link {
+        position: relative;
+        color: rgba($white, 0.9) !important;
+        font-weight: 600;
+        background: none !important;
+
+        &::after {
+            content: "";
+            position: absolute;
+            left: 0.5rem;
+            right: 0.5rem;
+            bottom: 0.22rem;
+            height: 3px;
+            border-radius: 99px;
+            background: $lime;
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 0.24s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        &:hover, &.active { color: $white !important; }
+        &:hover::after, &.active::after { transform: scaleX(1); }
+    }
+
+    .navbar-nav .nav-item {
+        &:nth-child(5n + 1) .nav-link::after { background: $lime; }
+        &:nth-child(5n + 2) .nav-link::after { background: $ink-soft; }
+        &:nth-child(5n + 3) .nav-link::after { background: $gold; }
+        &:nth-child(5n + 4) .nav-link::after { background: $brick; }
+        &:nth-child(5n + 5) .nav-link::after { background: $lime; }
+    }
+
+    .dropdown-menu {
+        border: 2px solid $ink;
+        border-radius: $border-radius-lg;
+        @include hard-shadow($ink, 4px, 4px, 0.9);
+
+        .dropdown-item:hover { background: $lime-pale; color: $ink; }
+    }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  PHOTO TILES — bordered, tactile, still never cropped
+// ═════════════════════════════════════════════════════════════
+
+.story-tile {
+    border: 2px solid $ink;
+    border-radius: $border-radius-lg;
+    background: $white;
+    @include hard-shadow($ink, 5px, 5px, 0.9);
+    @include lift-press($ink, 5px, 5px);
+
+    // story-styles lifts the tile with a soft shadow on hover; the hard shadow
+    // replaces that, so cancel the translateY it would otherwise add.
+    &:hover { transform: translate(-2px, -2px); }
+
+    &__caption { border-top: 3px solid $lime; }
+
+    &:nth-of-type(4n + 2) .story-tile__caption { border-top-color: $ink-mid; }
+    &:nth-of-type(4n + 3) .story-tile__caption { border-top-color: $gold; }
+    &:nth-of-type(4n + 4) .story-tile__caption { border-top-color: $brick; }
+
+    &__kicker {
+        font-family: $font-family-sans;
+        color: $ink;
+        letter-spacing: 0.1em;
+    }
+
+    &__caption p { font-family: $font-family-serif; color: $gray-700; }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  THE ABOUT BLOCK — portrait left, prose right
+//
+//  Modelled on the trestles layout of sayakkhatua.github.io: a square
+//  portrait with a hard offset shadow on the left, biography and social
+//  links on the right.
+//
+//  The portrait IS cropped to a square, unlike the fieldwork photographs.
+//  That is deliberate: a headshot cropped square is a portrait convention,
+//  whereas the field images are the research record and are never cut.
+//  Which part of the headshot survives is steerable:
+//      <div class="split__media" style="--portrait-focus: center 32%">
+// ═════════════════════════════════════════════════════════════
+
+// Not arbitrary. Two things have to fit on one line inside this column:
+// the four social pills (359px laid end to end) and the role line
+// "Visiting Assistant Professor, Department of Anthropology" (415px at 0.85rem).
+// 420px clears the wider of the two with a little slack.
+$portrait-width: 420px !default;
+
+.split {
+    grid-template-columns: minmax(0, $portrait-width) minmax(0, 1.45fr);
+    align-items: start;
+
+    &__media img {
+        width: 100%;
+        max-width: $portrait-width;
+        aspect-ratio: 1 / 1;
+        height: auto;
+        object-fit: cover;
+        object-position: var(--portrait-focus, center 40%);
+
+        border: 3px solid $ink;
+        border-radius: $border-radius-lg;
+        box-shadow: 7px 7px 0 0 $lime;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+
+        &:hover {
+            transform: translate(-3px, -3px);
+            box-shadow: 11px 11px 0 0 $ink-mid;
+        }
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+
+        &__media {
+            max-width: 260px;
+            margin: 0 auto;
+            img { box-shadow: 5px 5px 0 0 $lime; }
+        }
+    }
+}
+
+// Name, then role and affiliation, sitting directly beneath the portrait.
+.split__name {
+    margin: 1.1rem 0 0.25rem;
+    max-width: $portrait-width;
+    font-family: $font-family-serif;
+    font-size: 1.45rem;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: $ink;
+
+    @media (max-width: 768px) {
+        max-width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+.split__role {
+    margin: 0;
+    max-width: $portrait-width;
+    font-family: $font-family-sans;
+    font-size: 0.85rem;
+    line-height: 1.5;
+
+    span { display: block; }
+
+    // Kept on one line — the column width above is set so it fits.
+    .split__role-title {
+        font-weight: 600;
+        color: $ink-mid;
+        white-space: nowrap;
+    }
+
+    .split__role-inst { font-weight: 500; color: $gray-600; }
+
+    @media (max-width: 768px) {
+        max-width: 260px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+        // On a phone the column is far too narrow to hold it on one line.
+        .split__role-title { white-space: normal; }
+    }
+}
+
+// Social pills under the portrait, in the manner of Quarto's about-links.
+.split__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1.1rem;
+    max-width: $portrait-width;
+
+    a {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        padding: 0.34rem 0.9rem;
+        border: 2px solid $ink;
+        border-radius: 99px;
+        background: $white;
+        color: $ink !important;
+        font-family: $font-family-sans;
+        font-size: 0.82rem;
+        font-weight: 600;
+        background-image: none !important;
+        @include hard-shadow($ink, 3px, 3px, 1);
+        transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+
+        &:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 5px 5px 0 0 $ink;
+            color: $ink !important;
+        }
+
+        &:nth-child(3n + 1):hover { background: $lime-pale; }
+        &:nth-child(3n + 2):hover { background: $blue-pale; }
+        &:nth-child(3n + 3):hover { background: $gold-pale; }
+    }
+
+    @media (max-width: 768px) {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  CARDS
+// ═════════════════════════════════════════════════════════════
+
+.thread-card,
+.highlight-card,
+.story-card {
+    border: 2px solid $ink;
+    border-radius: $border-radius-lg;
+    background: $white;
+    @include hard-shadow($ink, 5px, 5px, 0.9);
+    @include lift-press($ink, 5px, 5px);
+
+    &:hover { transform: translate(-2px, -2px); border-color: $ink; }
+
+    // The bar story-styles paints across the top of each card, recoloured and
+    // cycled so a grid of cards is not a grid of identical stripes.
+    &::before { background: $lime !important; }
+
+    h3, h4 { color: $ink; }
+    p { color: $gray-600; }
+}
+
+.thread-grid .thread-card,
+.story-card-grid .story-card {
+    &:nth-child(4n + 2)::before { background: $ink-mid !important; }
+    &:nth-child(4n + 3)::before { background: $gold !important; }
+    &:nth-child(4n + 4)::before { background: $brick !important; }
+}
+
+.thread-card__num { font-family: $font-family-sans; color: $ink; }
+
+.story-card__more { color: $ink; }
+
+
+// ═════════════════════════════════════════════════════════════
+//  CHIPS — sticker pills with cycling tints
+// ═════════════════════════════════════════════════════════════
+
+.tag, .research-tag,
+.tag--alt, .research-tag-secondary {
+    border: 1.5px solid $ink !important;
+    border-radius: 99px !important;
+    color: $ink !important;
+    background: $white;
+    font-family: $font-family-sans;
+    font-weight: 600;
+    font-size: 0.78rem;
+    transition: transform 0.16s ease, background 0.16s ease;
+
+    &:hover {
+        transform: translateY(-2px) rotate(-1.5deg);
+        color: $ink !important;
+    }
+
+    &:nth-of-type(4n + 1) { background: $lime-pale; }
+    &:nth-of-type(4n + 2) { background: $blue-pale; }
+    &:nth-of-type(4n + 3) { background: $gold-pale; }
+    &:nth-of-type(4n + 4) { background: $brick-pale; }
+}
+
+.pub-year-badge {
+    background: $ink;
+    color: $white;
+    border-radius: 99px;
+    font-family: $font-family-sans;
+    letter-spacing: 0.06em;
+    @include hard-shadow($lime, 3px, 3px, 1);
+}
+
+// Kept dark blue rather than an accent: at this size neither lime nor yellow
+// clears the contrast threshold against a light ground.
+.section-label {
+    font-family: $font-family-sans;
+    color: $ink;
+    letter-spacing: 0.18em;
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  BUTTONS
+// ═════════════════════════════════════════════════════════════
+
+.btn,
+.btn-primary,
+.btn-solid,
+.btn-ghost {
+    border-radius: 99px;
+    font-family: $font-family-sans;
+    font-weight: 600;
+}
+
+.btn-primary {
+    border: 2px solid $ink;
+    background: $ink;
+    color: $white;
+    @include hard-shadow($lime, 3px, 3px, 1);
+    @include lift-press($lime, 3px, 3px);
+
+    &:hover, &:focus-visible {
+        background: $ink-mid;
+        border-color: $ink;
+        color: $white;
+    }
+}
+
+// On the hero and the dark band the shadow has to read against a photograph
+// rather than paper, so it goes dark blue and solid.
+.btn-solid {
+    background: $lime;
+    border: 2px solid $lime;
+    color: $ink;
+    @include hard-shadow($ink, 3px, 3px, 0.9);
+
+    &:hover, &:focus-visible {
+        background: $white;
+        border-color: $white;
+        color: $ink;
+        transform: translate(-2px, -2px);
+        box-shadow: 5px 5px 0 0 rgba($ink, 0.95);
+    }
+}
+
+.btn-ghost {
+    border: 2px solid rgba($white, 0.78);
+    color: $white;
+
+    &:hover, &:focus-visible {
+        background: $white;
+        border-color: $white;
+        color: $ink;
+        transform: translate(-2px, -2px);
+        box-shadow: 5px 5px 0 0 rgba($lime, 0.95);
+    }
+}
+
+.cv-download {
+    background: $ink !important;
+    color: $white !important;
+    border: 2px solid $ink;
+    @include hard-shadow($lime, 4px, 4px, 1);
+
+    &:hover {
+        background: $ink-mid !important;
+        transform: translate(-2px, -2px);
+        box-shadow: 6px 6px 0 0 $lime;
+    }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  HERO — a lime rule where the photograph meets the page
+// ═════════════════════════════════════════════════════════════
+
+// Quarto puts a top margin on main.content. On a page that opens with a
+// full-bleed photograph that margin shows up as a strip of page colour wedged
+// between the navbar and the image. Collapse it, but only on pages that
+// actually start with a hero — elsewhere the spacing is wanted.
+main.content:has(.story-hero) {
+    margin-top: 0 !important;
+    padding-top: 0 !important;   // Quarto sets both; zeroing only the margin leaves a 14px strip
+}
+
+.story-hero {
+    border-bottom: 4px solid $lime;
+
+    h1 { color: $white; }
+
+    &__eyebrow { font-family: $font-family-sans; color: $lime; }
+
+    &__standfirst { font-family: $font-family-serif; }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  QUOTES, NOTES, DETAILS
+// ═════════════════════════════════════════════════════════════
+
+.pull-quote {
+    padding: 1.4rem 1.6rem 1.4rem 2.8rem;
+    border: 2px solid $ink;
+    border-left: 8px solid $lime;
+    border-radius: $border-radius-lg;
+    background: $lime-pale;
+    @include hard-shadow($ink, 5px, 5px, 0.9);
+
+    &::before { color: rgba($ink, 0.25); left: 0.7rem; top: 0.1rem; }
+
+    p { font-family: $font-family-serif; color: $gray-700; }
+    cite { font-family: $font-family-sans; color: $ink; }
+}
+
+.field-note {
+    border: 2px solid $ink;
+    border-left: 8px solid $ink-mid;
+    border-radius: $border-radius-lg;
+    background: $blue-pale;
+    @include hard-shadow($ink, 4px, 4px, 0.85);
+
+    &__head { font-family: $font-family-sans; color: $ink; }
+    p:not(.field-note__head) { font-family: $font-family-serif; color: $gray-700; }
+}
+
+details {
+    border: 2px solid $ink;
+    border-radius: $border-radius-lg;
+    background: $white;
+    @include hard-shadow($ink, 4px, 4px, 0.85);
+
+    summary {
+        font-family: $font-family-sans;
+        color: $ink;
+        &:hover { background: $lime-pale; }
+    }
+
+    &[open] summary {
+        background: $lime-pale;
+        border-bottom: 2px solid $ink;
+    }
+}
+
+blockquote:not(.pull-quote) {
+    border: 2px solid $ink;
+    border-left: 8px solid $lime;
+    border-radius: $border-radius-lg;
+    background: $lime-pale;
+    font-family: $font-family-serif;
+    color: $gray-700;
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  BANDS, TABLES, CODE, FOOTER
+// ═════════════════════════════════════════════════════════════
+
+.band--dark {
+    background: linear-gradient(140deg, $ink 0%, darken($ink, 4%) 55%, $gray-900 100%);
+    border-top: 4px solid $lime;
+    border-bottom: 4px solid $lime;
+
+    .section-label { color: $lime; }
+    .stat-card .stat-number { color: $lime; font-family: $font-family-serif; }
+    .stat-card .stat-label  { color: rgba($white, 0.78); font-family: $font-family-sans; }
+    h2::after { background: $lime !important; }
+}
+
+.band:not(.band--dark) {
+    border: 2px solid $ink;
+    border-radius: $border-radius-lg;
+    background: $blue-pale;
+    @include hard-shadow($ink, 5px, 5px, 0.9);
+}
+
+.featured-section {
+    border: 2px solid $ink;
+    border-radius: $border-radius-lg;
+    background: $blue-pale;
+    @include hard-shadow($ink, 5px, 5px, 0.9);
+}
+
+table:not(.dataTable) {
+    border: 2px solid $ink;
+    border-radius: $border-radius-lg;
+    overflow: hidden;
+
+    th {
+        background: $ink;
+        color: $white;
+        font-family: $font-family-sans;
+    }
+
+    tbody tr:nth-child(even) { background: rgba($lime, 0.14); }
+    tbody tr:hover td { background: $blue-pale; }
+}
+
+div.sourceCode, pre {
+    border: 2px solid $ink;
+    border-radius: $border-radius-lg;
+    @include hard-shadow($ink, 4px, 4px, 0.85);
+
+    &::before { background: $lime !important; }
+}
+
+code:not(.sourceCode) {
+    font-family: $font-family-mono;
+    font-weight: 700;
+    border: 1px solid $gray-300;
+}
+
+.nav-footer {
+    background: $ink;
+    border-top: 4px solid $lime !important;
+
+    &::before { display: none; }
+
+    a {
+        color: $white;
+        font-weight: 600;
+        @include sweep-underline($lime, 1px);
+        &:hover { color: $lime; }
+    }
+}
+
+.timeline-item::before { background: $lime; border-color: $ice; }
+
+#TOC a, .sidebar nav[role="doc-toc"] a {
+    border-left: 3px solid transparent;
+    transition: color 0.18s ease, border-color 0.18s ease, transform 0.18s ease;
+
+    &:hover { color: $ink; border-left-color: $gray-300; transform: translateX(2px); }
+    &.active { color: $ink; font-weight: 700; border-left-color: $lime; }
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  NEWS FEED
+//
+//  ::: {.news}
+//  [Jul 2026]{.news-date}
+//  Text of the update, with [links](…) as normal.
+//  :::
+//
+//  Each blank-line-separated entry becomes one row: a small dated label above
+//  the update, with an accent bar down the left that cycles colour so a run of
+//  entries does not read as one undifferentiated stripe.
+// ═════════════════════════════════════════════════════════════
+
+.news {
+    max-width: min(52rem, 100%);
+    margin: 0.5rem 0 0;
+
+    p {
+        margin-bottom: 1.15rem;
+        padding: 0.15rem 0 0.15rem 1rem;
+        border-left: 4px solid $lime;
+        line-height: 1.6;
+        color: $gray-700;
+    }
+
+    p:nth-of-type(4n + 2) { border-left-color: $ink-mid; }
+    p:nth-of-type(4n + 3) { border-left-color: $gold; }
+    p:nth-of-type(4n + 4) { border-left-color: $brick; }
+}
+
+.news-date {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-family: $font-family-sans;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.09em;
+    text-transform: uppercase;
+    color: $gray-500;
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  UTILITIES — drop these into any page
+// ═════════════════════════════════════════════════════════════
+
+// Highlighter swipe:  <span class="hl">like this</span>
+.hl {
+    background: linear-gradient(180deg, transparent 56%, rgba($lime, 0.65) 56%);
+    padding: 0 0.11em;
+}
+
+// Sticker badge:  <span class="badge-pop">new</span>
+.badge-pop {
+    display: inline-block;
+    padding: 0.15em 0.55em;
+    border: 2px solid $ink;
+    border-radius: 99px;
+    background: $lime;
+    color: $ink;
+    font-family: $font-family-sans;
+    font-size: 0.72em;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    vertical-align: 0.2em;
+    transform: rotate(-2deg);
+    @include hard-shadow($ink, 2px, 2px, 1);
+}
+
+// Wiggle on hover:  <span class="wiggle">🪡</span>
+.wiggle {
+    display: inline-block;
+    &:hover { animation: wiggle 0.5s ease-in-out; }
+}
+
+@keyframes wiggle {
+    0%, 100% { transform: rotate(0deg); }
+    25%      { transform: rotate(-9deg) scale(1.08); }
+    75%      { transform: rotate(9deg) scale(1.08); }
+}
+
+// Accent rule:  <hr class="rainbow">
+hr.rainbow {
+    height: 5px;
+    border: 0;
+    border-radius: 99px;
+    opacity: 1;
+    background: linear-gradient(90deg, $ink, $ink-mid, $lime, $gold, $brick);
+}
+
+.section-divider {
+    height: 4px;
+    border-radius: 99px;
+    background: linear-gradient(90deg, transparent, $ink-mid, $lime, transparent);
+}
+
+
+// ═════════════════════════════════════════════════════════════
+//  RESPONSIVE — shrink the offsets so shadows do not crowd
+//  small screens
+// ═════════════════════════════════════════════════════════════
+
+@media (max-width: 768px) {
+    .story-tile,
+    .thread-card,
+    .highlight-card,
+    .story-card,
+    .pull-quote,
+    .field-note,
+    details { box-shadow: 3px 3px 0 0 rgba($ink, 0.9); }
+
+    .navbar { border-bottom-width: 2px; }
+    .story-hero { border-bottom-width: 3px; }
+}

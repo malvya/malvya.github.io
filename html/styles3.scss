@@ -1,0 +1,521 @@
+/*-- scss:defaults --*/
+
+/* Cultural Anthropology Academic Theme */
+/* Inspired by global cultures, field notes, and academic exploration */
+
+// Base neutrals - warm, earthy tones
+$white:    #fefefe !default;
+$cream:    #f7f5f3 !default;
+$paper:    #f4f1ed !default;
+$gray-100: #f0ede8 !default;
+$gray-200: #e6e1db !default;
+$gray-300: #d4cfc7 !default;
+$gray-400: #b8b2a7 !default;
+$gray-500: #9c9588 !default;
+$gray-600: #7a7066 !default;
+$gray-700: #5d5449 !default;
+$gray-800: #3d3530 !default;
+$gray-900: #2a251f !default;
+$black:    #1a1612 !default;
+
+// Cultural color palette - inspired by global art traditions
+$terracotta: #d2691e !default;        // Earth tones
+$sage:       #87a96b !default;        // Natural greens
+$ochre:      #cc8400 !default;        // Ancient pigments
+$indigo:     #4b0082 !default;        // Traditional dyes
+$coral:      #ff6b6b !default;        // Warm accents
+$teal:       #008080 !default;        // Ocean depths
+$burgundy:   #800020 !default;        // Rich traditions
+$gold:       #daa520 !default;        // Sacred metals
+$lavender:   #9b7cb6 !default;        // Spiritual tones
+$forest:     #355e3b !default;        // Deep nature
+$amber:      #ffbf00 !default;        // Warm light
+$slate:      #2f4f4f !default;        // Stone textures
+
+// Theme colors
+$primary:   $teal !default;
+$secondary: $terracotta !default;
+$accent:    $ochre !default;
+$success:   $sage !default;
+$info:      $indigo !default;
+$warning:   $amber !default;
+$danger:    $coral !default;
+$light:     $cream !default;
+$dark:      $gray-900 !default;
+
+// Typography inspired by field notes and academic journals
+$font-family-serif: "Crimson Text", "Libre Baskerville", Georgia, serif !default;
+$font-family-sans: "Inter", "Source Sans Pro", system-ui, sans-serif !default;
+$font-family-mono: "JetBrains Mono", "Fira Code", Consolas, monospace !default;
+
+// Links - playful but professional
+$link-color: $primary !default;
+$link-decoration: none !default;
+$link-hover-color: $secondary !default;
+$link-hover-decoration: underline !default;
+$link-transition: all 0.3s ease !default;
+
+// Footer - warm and inviting
+$footer-bg: linear-gradient(135deg, #{$gray-900} 0%, #{$slate} 100%) !default;
+$footer-fg: $gray-300 !default;
+
+// Code blocks - field notes aesthetic
+$code-bg: $paper !default;
+$code-color: $gray-800 !default;
+$code-border: 1px solid $gray-300 !default;
+
+// Table of contents - manuscript style
+$toc-color: $terracotta !default;
+$toc-font-size: 0.95em !default;
+
+// Buttons and interactive elements
+$btn-code-copy-color-active: $ochre !default;
+
+// Shadows and depth
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1) !default;
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1) !default;
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1) !default;
+
+// Border radius for organic feel
+$border-radius: 6px !default;
+$border-radius-sm: 4px !default;
+$border-radius-lg: 12px !default;
+
+/*-- scss:rules --*/
+
+// Global enhancements
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(135deg, #{$cream} 0%, #{$white} 100%);
+    font-family: $font-family-sans;
+    color: $gray-800;
+    line-height: 1.7;
+    position: relative;
+    
+    // Subtle paper texture
+    &::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+            radial-gradient(circle at 1px 1px, rgba(0,0,0,0.02) 1px, transparent 0);
+        background-size: 20px 20px;
+        pointer-events: none;
+        z-index: -1;
+    }
+}
+
+// Enhanced typography
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-serif;
+    color: $gray-900;
+    margin-bottom: 1rem;
+    font-weight: 600;
+    
+    // Playful underlines for headings
+    &::after {
+        content: '';
+        display: block;
+        width: 60px;
+        height: 3px;
+        background: linear-gradient(90deg, $primary, $secondary);
+        margin-top: 0.5rem;
+        border-radius: 2px;
+    }
+}
+
+h1::after { width: 80px; height: 4px; }
+h2::after { width: 70px; }
+h3::after { width: 50px; height: 2px; }
+h4::after, h5::after, h6::after { width: 40px; height: 2px; }
+
+// Enhanced links with cultural flair
+a {
+    color: $link-color;
+    text-decoration: $link-decoration;
+    transition: $link-transition;
+    position: relative;
+    
+    &:hover {
+        color: $link-hover-color;
+        text-decoration: $link-hover-decoration;
+        transform: translateY(-1px);
+    }
+    
+    // Subtle highlight effect
+    &:hover::before {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, $primary, $secondary);
+        border-radius: 1px;
+    }
+}
+
+// Enhanced code blocks
+pre, code {
+    font-family: $font-family-mono;
+    background: $code-bg;
+    border: $code-border;
+    border-radius: $border-radius-sm;
+    box-shadow: $shadow-sm;
+}
+
+pre {
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    overflow-x: auto;
+    position: relative;
+    
+    // Field notes aesthetic
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        width: 4px;
+        background: linear-gradient(180deg, $primary, $secondary);
+        border-radius: 2px 0 0 2px;
+    }
+}
+
+code {
+    padding: 0.2em 0.4em;
+    font-size: 0.9em;
+    color: $code-color;
+}
+
+// Enhanced blockquotes - field notes style
+blockquote {
+    border-left: 4px solid $secondary;
+    padding: 1rem 1.5rem;
+    margin: 1.5rem 0;
+    background: rgba($terracotta, 0.05);
+    border-radius: 0 $border-radius $border-radius 0;
+    font-style: italic;
+    position: relative;
+    
+    &::before {
+        content: '"';
+        font-size: 3rem;
+        color: $secondary;
+        position: absolute;
+        left: 1rem;
+        top: -0.5rem;
+        font-family: $font-family-serif;
+        opacity: 0.3;
+    }
+}
+
+// Enhanced tables
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 1.5rem 0;
+    background: $white;
+    border-radius: $border-radius;
+    overflow: hidden;
+    box-shadow: $shadow-md;
+    
+    th {
+        background: linear-gradient(135deg, $primary, $teal);
+        color: $white;
+        padding: 1rem;
+        font-weight: 600;
+        text-align: left;
+    }
+    
+    td {
+        padding: 0.75rem 1rem;
+        border-bottom: 1px solid $gray-200;
+        transition: background-color 0.2s ease;
+    }
+    
+    tr:hover td {
+        background: rgba($primary, 0.05);
+    }
+}
+
+// Enhanced navigation
+.navbar {
+    background: rgba($white, 0.95) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba($primary, 0.1);
+    box-shadow: $shadow-sm;
+    
+    .navbar-brand {
+        font-family: $font-family-serif;
+        font-weight: 700;
+        color: $primary !important;
+        font-size: 1.5rem;
+        
+        &:hover {
+            color: $secondary !important;
+        }
+    }
+    
+    .nav-link {
+        color: $gray-700 !important;
+        font-weight: 500;
+        margin: 0 0.5rem;
+        border-radius: $border-radius-sm;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            color: $primary !important;
+            background: rgba($primary, 0.1);
+            transform: translateY(-1px);
+        }
+    }
+}
+
+// Enhanced footer
+.nav-footer {
+    background: $footer-bg;
+    color: $footer-fg;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border: 0 !important;
+    min-height: 4em;
+    padding: 2rem 0;
+    position: relative;
+    
+    // Decorative border
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, $primary, $secondary, $ochre);
+    }
+
+    a {
+        color: $primary;
+        transition: all 0.3s ease;
+        
+        &:hover {
+            color: $amber;
+            transform: translateY(-1px);
+        }
+    }
+
+    .faux-block {
+        display: block;
+        padding-bottom: 0.4em;
+        font-size: 0.9rem;
+    }
+
+    .nav-footer-center {
+        text-align: center;
+        position: inherit;
+        margin-top: 0;
+        font-family: $font-family-serif;
+        font-style: italic;
+
+        @media (max-width: map-get($grid-breakpoints, md)) {
+            margin-top: 0.5em;
+            margin-bottom: 1.5em;
+        }
+    }
+
+    .nav-footer-left,
+    .nav-footer-right,
+    .nav-footer-center {
+        text-align: center;
+        width: 100%;
+        min-height: 2em;
+    }
+
+    @media (min-width: map-get($grid-breakpoints, md)) {
+        .nav-footer-left {
+            text-align: left;
+        }
+
+        .nav-footer-right {
+            text-align: right;
+        }
+
+        .nav-footer-left,
+        .nav-footer-right,
+        .nav-footer-center {
+            flex: 1 1 33%;
+        }
+    }
+}
+
+// Enhanced buttons
+.btn {
+    border-radius: $border-radius;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+    
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: $shadow-md;
+    }
+    
+    &.btn-primary {
+        background: linear-gradient(135deg, $primary, $teal);
+        color: $white;
+        
+        &:hover {
+            background: linear-gradient(135deg, $teal, $primary);
+        }
+    }
+    
+    &.btn-secondary {
+        background: linear-gradient(135deg, $secondary, $terracotta);
+        color: $white;
+        
+        &:hover {
+            background: linear-gradient(135deg, $terracotta, $secondary);
+        }
+    }
+}
+
+// Enhanced alerts
+.alert {
+    border-radius: $border-radius;
+    border: none;
+    box-shadow: $shadow-sm;
+    
+    &.alert-info {
+        background: rgba($info, 0.1);
+        color: $info;
+        border-left: 4px solid $info;
+    }
+    
+    &.alert-warning {
+        background: rgba($warning, 0.1);
+        color: darken($warning, 20%);
+        border-left: 4px solid $warning;
+    }
+    
+    &.alert-success {
+        background: rgba($success, 0.1);
+        color: $success;
+        border-left: 4px solid $success;
+    }
+}
+
+// Table of contents enhancement
+.toc {
+    background: rgba($white, 0.8);
+    border-radius: $border-radius;
+    padding: 1.5rem;
+    box-shadow: $shadow-sm;
+    backdrop-filter: blur(10px);
+    
+    .toc-title {
+        font-family: $font-family-serif;
+        color: $terracotta;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    
+    ul {
+        list-style: none;
+        padding-left: 0;
+        
+        li {
+            margin: 0.5rem 0;
+            padding-left: 1rem;
+            position: relative;
+            
+            &::before {
+                content: '◦';
+                color: $ochre;
+                position: absolute;
+                left: 0;
+                font-weight: bold;
+            }
+            
+            a {
+                color: $toc-color;
+                font-size: $toc-font-size;
+                text-decoration: none;
+                
+                &:hover {
+                    color: $ochre;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+
+// Responsive images
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: $border-radius;
+    box-shadow: $shadow-sm;
+    transition: transform 0.3s ease;
+    
+    &:hover {
+        transform: scale(1.02);
+        box-shadow: $shadow-md;
+    }
+}
+
+// Enhanced figures
+figure {
+    margin: 2rem 0;
+    text-align: center;
+    
+    figcaption {
+        font-style: italic;
+        color: $gray-600;
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+        font-family: $font-family-serif;
+    }
+}
+
+// Loading animations
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// Apply animation to content
+.content {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+// Print styles
+@media print {
+    body {
+        background: white !important;
+        color: black !important;
+    }
+    
+    .nav-footer {
+        background: white !important;
+        color: black !important;
+    }
+    
+    a {
+        color: black !important;
+        text-decoration: underline !important;
+    }
+}
