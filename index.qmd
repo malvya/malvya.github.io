@@ -1,6 +1,7 @@
 ---
 title: ""
-pagetitle: "Malvya Chintakindi | About"
+pagetitle: "Malvya Chintakindi | Anthropologist"
+include-in-header: html/head-home.html
 toc: false
 anchor-sections: false
 execute:
